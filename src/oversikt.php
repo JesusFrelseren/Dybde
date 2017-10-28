@@ -6,6 +6,7 @@ include("include/xml_reader.php");
 <head>
     <title>Vannstand</title>
     <link rel="stylesheet" href="stylesheet/base.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet/map.css" type="text/css">
     <script src="js/iframe.js" defer></script>
     <meta charset="UTF-8">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap"

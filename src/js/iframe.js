@@ -1,10 +1,3 @@
-
-function hentPosisjon() {
-//alert("test");
-var test = window.frames[0].document.getElementById['ng-binding'];
-document.getElementById['test-iframe-data'].value = test
-}
-
 function initMap() {
     var honefoss = {lat: 60.169472, lng: 10.256355};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -28,10 +21,7 @@ function initMap() {
         removeMarker(marker, markers)
     });
 
-
 }
-
-
 
   function placeMarker(position, map, markers) {
       var marker = new google.maps.Marker({
@@ -45,11 +35,19 @@ function initMap() {
       });
 
     markers.push(marker);
-    document.getElementById('coordinates').value = marker.position;
+    //document.getElementById('coordinates').value = marker.position;
   }
 
   function removeMarker(marker, markers) {
       marker.setMap(null);
       //todo: fjern marker fra markers
+      var test = '';
+      var teller = 0;
+      for (i = 0; i < markers.length; i++) {
+          if(marker === markers[i]) {
+              markers.pop()
+          }
+      }
+      alert(markers.length);
   }
 
