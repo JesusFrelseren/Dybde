@@ -1,0 +1,17 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    position: absolute;
+    right: 0;
+}
+
+table {
+    position: absolute;
+    width: 50%;
+}
+
