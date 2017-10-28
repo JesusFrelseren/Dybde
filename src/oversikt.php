@@ -13,6 +13,7 @@ include("include/xml_reader.php");
     <table id="data">
         <tbody>
             <tr><th>Middelvann</th><th>Normalnull</th><th>Sjøkartnull</th></tr>
+            <tr><th>139 cm</th><th>120 cm</th><th>100 cm</th></tr>
            <?php var_dump(hentData("63.9", "9.4", "")); ?>
 
         </tbody>

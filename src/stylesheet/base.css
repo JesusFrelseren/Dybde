@@ -19,3 +19,8 @@ table {
 table tbody tr th{
     border: 1px solid black;
 }
+table tbody tr{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
