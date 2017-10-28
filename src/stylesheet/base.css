@@ -13,5 +13,6 @@ iframe {
 table {
     position: absolute;
     width: 50%;
+    color: blue;
 }
 
