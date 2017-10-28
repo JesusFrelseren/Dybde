@@ -16,3 +16,6 @@ table {
     color: blue;
 }
 
+table tbody tr th{
+    border: 1px solid black;
+}
