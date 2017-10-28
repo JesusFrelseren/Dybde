@@ -6,8 +6,13 @@ include("include/xml_reader.php");
 <head>
     <title>Vannstand</title>
     <link rel="stylesheet" href="stylesheet/base.css" type="text/css">
-    <script src="js/iframe.js"></script>
+    <script src="js/iframe.js" defer></script>
     <meta charset="UTF-8">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap"
+  type="text/javascript"></script>
+    
+     
+
 
 </head>
 <body>
@@ -30,13 +35,8 @@ include("include/xml_reader.php");
         </table>
     </left-content>
     <right-content>
-        <iframe src="http://norgeskart.no/#!?project=seeiendom&layers=1002,1014&zoom=4&lat=6969038.00&lon=350686.00"
-<<<<<<< HEAD
-            width="600" height="900">
-=======
-            width="500" height="800" id="norgeskart">
->>>>>>> c29872a5d8e5face9b3a0d18662aa12ba92e069c
-        </iframe>
+    <div id="map"></div>
+    
     </right-content>
 
     <div id="test-iframe-data">test iframe data</div>
@@ -57,3 +57,15 @@ Middel høyvann: Gjennomsnittene av alle høyvannene over 19 år
 
 
 -->
+
+    <!--<img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284
+&key=AIzaSyCfm81hV13uZm5GzFcddi_Cm61KHkxZ_xI"> -->
+<!--<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAeqhlIrEHILRGSLzGyBYfqTpIWlGWPx78
+    &q=Space+Needle,Seattle+WA" allowfullscreen>
+</iframe>-->

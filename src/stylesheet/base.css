@@ -75,3 +75,8 @@ input[type=text] {
 input[type=text]:focus {
     width: 50%;
 }
+
+#map {
+    height: 400px;
+    width: 400px;
+}
