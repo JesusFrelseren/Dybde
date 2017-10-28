@@ -28,7 +28,7 @@ include("include/xml_reader.php");
         </table>
     </left-content>
     <right-content>
-        <iframe src="http://norgeskart.no/#!?project=seeiendom&layers=1002,1014&zoom=4&lat=7112425.52&lon=336105.93&type=1"
+        <iframe src="http://norgeskart.no/#!?project=seeiendom&layers=1002,1014&zoom=4&lat=6969038.00&lon=350686.00"
             width="500" height="800">
         </iframe>
     </right-content>
