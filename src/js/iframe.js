@@ -26,11 +26,6 @@ function initMap() {
 
 }
 
-  /*google.maps.event.addListener(map, 'click', function(e) {
-    placeMarker(e.latLng, map);
-  });*/
-
-
 
   function placeMarker(position, map, markers) {
     var marker = new google.maps.Marker({
