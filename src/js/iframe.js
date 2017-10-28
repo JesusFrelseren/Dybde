@@ -15,7 +15,7 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: honefoss,
       map: map,
-      draggable:true
+        icon: 'resource/cat.jpg'
     });
 
     var markers = [marker];
@@ -30,7 +30,8 @@ function initMap() {
   function placeMarker(position, map, markers) {
     var marker = new google.maps.Marker({
       position: position,
-      map: map
+      map: map,
+        icon: 'resource/cat.jpg'
     });
     markers.push(marker);
     map.panTo(position);
