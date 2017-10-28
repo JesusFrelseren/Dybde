@@ -29,9 +29,11 @@ include("include/xml_reader.php");
     </left-content>
     <right-content>
         <iframe src="http://norgeskart.no/#!?project=seeiendom&layers=1002,1014&zoom=4&lat=6969038.00&lon=350686.00"
-            width="500" height="800">
+            width="500" height="800" id="norgeskart">
         </iframe>
     </right-content>
+
+    <div id="test-iframe-data">test iframe data</div>
 
 </body>
 </html>
