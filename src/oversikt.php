@@ -10,13 +10,12 @@ include("include/xml_reader.php");
     <meta charset="UTF-8">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap"
   type="text/javascript"></script>
-    
-     
 
 
 </head>
 <body>
     <header>
+        <input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">
         <sokefelt>
             <sokeboks>
             <input type="text" name="search" placeholder="Søk etter sted">
@@ -29,8 +28,6 @@ include("include/xml_reader.php");
             <tbody>
                 <tr><th>Middelvann</th><th>Normalnull</th><th>Sjøkartnull</th></tr>
                 <tr><td>139 cm</td><td>120 cm</td><td>100 cm</td></tr>
-            <!-- <?php var_dump(hentData("63.9", "9.4", "")); ?> -->
-
             </tbody>
         </table>
     </left-content>
@@ -39,7 +36,7 @@ include("include/xml_reader.php");
     
     </right-content>
 
-    <div id="test-iframe-data">test iframe data</div>
+
     <button type="button">Test</button>
 
 </body>

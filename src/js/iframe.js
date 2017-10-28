@@ -6,25 +6,40 @@ document.getElementById['test-iframe-data'].value = test
 }
 
 function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
+    var honefoss = {lat: 60.169472, lng: 10.256355};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: uluru
+      zoom: 13,
+      center: honefoss
     });
+
     var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
+      position: honefoss,
+      map: map,
+      draggable:true
     });
-  }
 
-  google.maps.event.addListener(map, 'click', function(e) {
+    var markers = [marker];
+
+    google.maps.event.addListener(map, 'click', function(e) {
+        placeMarker(e.latLng, map, markers)
+    });
+
+}
+
+  /*google.maps.event.addListener(map, 'click', function(e) {
     placeMarker(e.latLng, map);
-  });
+  });*/
 
-  function placeMarker(position, map) {
+
+
+  function placeMarker(position, map, markers) {
     var marker = new google.maps.Marker({
       position: position,
       map: map
-    });  
+    });
+    markers.push(marker);
     map.panTo(position);
+    document.getElementById('coordinates').value = marker.position;
   }
+
+
