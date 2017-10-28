@@ -4,16 +4,30 @@
     margin: 0;
     padding: 0;
 }
+left-content{
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+right-content{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
 
 iframe {
     position: absolute;
-    right: 0;
+    right: 0px;
+    margin: 15px;
+    
 }
 
 table {
-    position: absolute;
+    position: relative;
+    top: 50px;
     width: 50%;
-    color: blue;
+    margin: 5px;
+    border: 1px solid black;
 }
 
 table tbody tr th{
@@ -24,4 +38,28 @@ table tbody tr td{
 }
 table tbody{
     border: 1px solid black;
+}
+sokefelt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+sokeboks{
+    position: absolute;
+    right: 50%;
+    top: 15px;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 24px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 50%;
 }

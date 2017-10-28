@@ -9,18 +9,29 @@ include("include/xml_reader.php");
     <meta charset="UTF-8">
 </head>
 <body>
+    <header>
+        <sokefelt>
+            <sokeboks>
+            <input type="text" name="search" placeholder="Søk etter sted">
+            <button>søk</button>
+            </sokeboks>
+        </sokefelt>
+    </header>
+    <left-content>
+        <table id="data">
+            <tbody>
+                <tr><th>Middelvann</th><th>Normalnull</th><th>Sjøkartnull</th></tr>
+                <tr><td>139 cm</td><td>120 cm</td><td>100 cm</td></tr>
+            <!-- <?php var_dump(hentData("63.9", "9.4", "")); ?> -->
 
-    <table id="data">
-        <tbody>
-            <tr><th>Middelvann</th><th>Normalnull</th><th>Sjøkartnull</th></tr>
-            <tr><td>139 cm</td><td>120 cm</td><td>100 cm</td></tr>
-           <?php var_dump(hentData("63.9", "9.4", "")); ?>
-
-        </tbody>
-    </table>
-    
-    <iframe src="http://norgeskart.no/#!?project=seeiendom&layers=1002,1014&zoom=4&lat=7112425.52&lon=336105.93&type=1"
-        width="500" height="800"></iframe>
+            </tbody>
+        </table>
+    </left-content>
+    <right-content>
+        <iframe src="http://norgeskart.no/#!?project=seeiendom&layers=1002,1014&zoom=4&lat=7112425.52&lon=336105.93&type=1"
+            width="500" height="800">
+        </iframe>
+    </right-content>
 
 </body>
 </html>
