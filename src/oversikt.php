@@ -16,11 +16,11 @@ include("include/xml_reader.php");
 </head>
 <body>
     <header>
-        <input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">
+        <!--<input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">-->
         <sokefelt>
             <sokeboks>
-            <input type="text" name="search" placeholder="Søk etter sted">
-            <button>søk</button>
+                <input type="text" name="search" placeholder="Søk etter sted">
+                <button>Søk</button>
             </sokeboks>
         </sokefelt>
     </header>
@@ -36,9 +36,6 @@ include("include/xml_reader.php");
     <div id="map"></div>
     
     </right-content>
-
-
-    <button type="button">Test</button>
 
 </body>
 </html>

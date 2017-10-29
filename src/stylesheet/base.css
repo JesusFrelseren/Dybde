@@ -18,28 +18,18 @@ right-content{
     top: 50px;
     width: 50%;
     height: 100%;
-    border-left: 1px solid black;
-}
-
-iframe {
-    position: relative;
-    right: 0px;
-    margin-left:auto; 
-    margin-right:auto;
-    left: 20%;
-    top: 20px;
-    
+    border-left: 3px dashed #7BC5F4;
+    cursor: crosshair;
 }
 
 table {
     position: relative;
     top: 20px;
-    width: 50%;
-    margin: 5px;
+    width: 100%;
+    margin: 0;
     border: 1px solid black;
     text-align:center;
-    margin-left:auto; 
-    margin-right:auto;
+    margin: auto;
 }
 
 table tbody tr th{
@@ -57,16 +47,22 @@ sokefelt{
     left: 0;
     right: 0;
     height: 50px;
-    border-bottom: 1px solid black;
+    width: 100%;
+    /*border-bottom: 1px solid black;*/
+    background-color: #7BC5F4;
+    /*box-shadow: 5px 5px 5px #888888;*/
+    
 }
-sokeboks{
+
+sokeboks {
+    display: inline;
     position: absolute;
-    right: 50%;
+    left: 5%;
     top: 15px;
 }
 
 input[type=text] {
-    width: 200px;
+    width: 400px;
     height: 24px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
@@ -75,4 +71,17 @@ input[type=text] {
 input[type=text]:focus {
     width: 50%;
 }
+
+button {
+    display: inline;
+}
+
+
+/*
+143258
+4B8AD7
+74923B
+7BC5F4
+7BC5F4      
+*/
 

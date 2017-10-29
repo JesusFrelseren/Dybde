@@ -2,13 +2,18 @@ function initMap() {
     var honefoss = {lat: 60.169472, lng: 10.256355};
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,
-      center: honefoss
+      center: honefoss,
+      fullscreenControl: false,
+      streetViewControl: false,
+      
+
     });
+
 
     var marker = new google.maps.Marker({
       position: honefoss,
-      map: map,
-        //icon: 'resource/gunnar.jpg'
+      map: map
+        //icon: 'resource/cat.jpg'
     });
 
     var markers = [marker];
@@ -27,7 +32,7 @@ function initMap() {
       var marker = new google.maps.Marker({
           position: position,
           map: map
-          //icon: 'resource/gunnar.jpg'
+          //icon: 'resource/cat.jpg'
       });
 
       google.maps.event.addListener(marker, 'click', function(e) {
@@ -47,7 +52,8 @@ function initMap() {
           if(marker === markers[i]) {
               markers.pop()
           }
-      }
-      alert(markers.length);
-  }
+      } 
+     }
+
+      
 
