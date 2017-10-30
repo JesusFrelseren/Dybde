@@ -14,12 +14,13 @@
 <body>
     <header>
         <!--<input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">-->
-        <!-- <sokefelt>
+        <sokefelt>
+        <!--
             <sokeboks>
                 <input type="text" id="search" placeholder="Søk etter sted">
                 <button onclick='placesSearch()'>Søk</button>
-            </sokeboks>
-        </sokefelt> -->
+            </sokeboks> -->
+        </sokefelt> 
     </header>
     <left-content>
         <table id="data">
