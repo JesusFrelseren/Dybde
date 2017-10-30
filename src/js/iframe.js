@@ -1,12 +1,12 @@
+var map;
+
 function initMap() {
     var honefoss = {lat: 60.169472, lng: 10.256355};
-    var map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,
       center: honefoss,
       fullscreenControl: false,
       streetViewControl: false,
-      
-
     });
 
 
@@ -53,7 +53,33 @@ function initMap() {
               markers.pop()
           }
       } 
-     }
+     
+    }
 
+     function placesSearch() {
+        var location = document.getElementById('search');
+
+        var url = 'https://maps.googleapis.com/maps/api/geocode/xml?address=sandnes&key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0';
+
+        coordinates = readResponse('<?xml version="1.0" encoding="UTF-8"?>' + url);
+        //alert(coordinates);
+
+    }
+
+    function readResponse(url) {
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(url, 'text/xml');
+        var tmp = [];
+
+        tmp.push(xmlDoc.getElementsByTagName('location')[0].childNodes[0].nodeValue);
+        tmp.push(xmlDoc.getElementsByTagName('location')[0].childNodes[1].nodeValue);
+        alert(tmp);
+        return xmlDoc.getElementsByTagName('location')
+    }
+
+    function returnCoordinates(xml) {
+        
+    }
+      
       
 

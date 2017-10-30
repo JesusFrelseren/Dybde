@@ -1,7 +1,4 @@
-<?php
 
-include("include/xml_reader.php");
-?>
 <html>
 <head>
     <title>Vannstand</title>
@@ -9,7 +6,7 @@ include("include/xml_reader.php");
     <link rel="stylesheet" href="stylesheet/map.css" type="text/css">
     <script src="js/iframe.js" defer></script>
     <meta charset="UTF-8">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap"
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap&libraries=places"
   type="text/javascript"></script>
 
 
@@ -19,8 +16,8 @@ include("include/xml_reader.php");
         <!--<input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">-->
         <sokefelt>
             <sokeboks>
-                <input type="text" name="search" placeholder="Søk etter sted">
-                <button>Søk</button>
+                <input type="text" id="search" placeholder="Søk etter sted">
+                <button onclick='placesSearch()'>Søk</button>
             </sokeboks>
         </sokefelt>
     </header>
