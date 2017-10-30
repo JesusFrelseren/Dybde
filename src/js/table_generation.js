@@ -2,9 +2,14 @@ function makeTable() {
 
     var table = document.createElement('table');
     table.id = 'data';
+
+    var table_section = makePlaceDescription();
     table.appendChild(makeHeader());
     table.appendChild(makeTBody());
-    document.getElementById('left-content').appendChild(table);
+    table_section.appendChild(table);
+
+    document.getElementById('left-content').appendChild(table_section);
+
 
 }
 
@@ -26,12 +31,24 @@ function makeTBody() {
 
     var trow = document.createElement('tr');
     var depths = ["xml", "goes", "here"];
-    for (i in depths) {
-        tmp = document.createElement('td');
+    for (var i in depths) {
+        var tmp = document.createElement('td');
         tmp.id = depths[i];
         tmp.innerHTML = depths[i];
         trow.appendChild(tmp)
     }
 
     return trow;
+}
+
+function makePlaceDescription() {
+
+    var desc = document.createElement('p');
+    desc.classList.add('location');
+    var sect = document.createElement('section');
+    sect.classList.add('depth-statistics');
+
+    desc.innerHTML = "Stedsnavn, koordinater";
+    sect.appendChild(desc);
+    return sect;
 }

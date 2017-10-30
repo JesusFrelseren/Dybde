@@ -1,0 +1,25 @@
+table {
+    position: relative;
+    width: 95%;
+    border: 1px solid black;
+    text-align:center;
+    margin: auto;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    font-family: Gadugi, "sans-serif";
+}
+
+table td {
+    border: 1px solid black;
+}
+
+table th {
+    background-color: #62AFE0;
+    color: white;
+}
+table tbody tr td{
+    border: 1px solid black;
+}
+table tbody{
+    border: 1px solid black;
+}
