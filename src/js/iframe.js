@@ -98,7 +98,7 @@ function initMap() {
       } 
      
     }
-
+    /*
      function placesSearch() {
         var location = document.getElementById('search');
 
@@ -108,6 +108,7 @@ function initMap() {
         //alert(coordinates);
 
     }
+    */
 
     function readResponse(url) {
         var parser = new DOMParser();
@@ -124,8 +125,12 @@ function initMap() {
         
     }
       
+<<<<<<< HEAD
     function makeTable() {
         document.getElement
     }
       
+=======
+    hallo  
+>>>>>>> 2fc70c383cbd3a2810a908b42a233ab6f75b9b54
 
