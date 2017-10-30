@@ -42,7 +42,7 @@ function initMap() {
       });
 
     markers.push(marker);
-    makeTable(marker);
+    makeTable();
     //document.getElementById('coordinates').value = marker.position;
   }
   
@@ -59,17 +59,6 @@ function initMap() {
       } 
      
     }
-    /*
-     function placesSearch() {
-        var location = document.getElementById('search');
-
-        var url = 'https://maps.googleapis.com/maps/api/geocode/xml?address=sandnes&key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0';
-
-        coordinates = readResponse('<?xml version="1.0" encoding="UTF-8"?>' + url);
-        //alert(coordinates);
-
-    }
-    */
 
     function readResponse(url) {
         var parser = new DOMParser();
@@ -86,45 +75,5 @@ function initMap() {
         
     }
       
-    function makeTable(marker) {
 
-        var table = document.createElement('table');
-        var tbody = document.createElement('tbody');
-
-        var th = document.createElement('th');
-        var th2 = document.createElement('th');
-
-        var trow = document.createElement('tr');
-
-        var trow2 = document.createElement('tr');
-        var td = document.createElement('td');
-        var td2 = document.createElement('td');
-        var tdh = document.createElement('td');
-        var tdh2 = document.createElement('td');
-        
-        table.id = 'data';
-
-
-
-        
-        tdh.innerHTML = "Middelvann";
-        tdh2.innerHTML = "Sjøkartnull";
-        trow.appendChild(tdh);
-        trow.appendChild(tdh2);
-
-        td.innerHTML = marker.position;
-        td2.innerHTML = marker.position;
-        
-        trow2.appendChild(td);
-        trow2.appendChild(td2);
-
-        table.appendChild(trow);
-        table.appendChild(trow2);
-        
-
-
-        document.getElementById('left-content').appendChild(table);
-
-
-    }
       
