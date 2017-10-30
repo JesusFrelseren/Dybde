@@ -22,14 +22,14 @@
             </sokeboks> -->
         </sokefelt> 
     </header>
-    <left-content>
+    <div id="left-content">
         <table id="data">
             <tbody>
-                <tr><th>Middelvann</th><th>Normalnull</th><th>Sjøkartnull</th></tr>
+                <tr><th class='th-middel'>Middelvann</th><th class='th-normal'>Normalnull</th><th class='th-null'>Sjøkartnull</th></tr>
                 <tr><td>0</td><td>0</td><td>0</td></tr>
             </tbody>
         </table>
-    </left-content>
+</div>
     <right-content>
     <div id="map"></div>
     
