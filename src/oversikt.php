@@ -14,18 +14,18 @@
 <body>
     <header>
         <!--<input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">-->
-        <sokefelt>
+        <!-- <sokefelt>
             <sokeboks>
                 <input type="text" id="search" placeholder="Søk etter sted">
                 <button onclick='placesSearch()'>Søk</button>
             </sokeboks>
-        </sokefelt>
+        </sokefelt> -->
     </header>
     <left-content>
         <table id="data">
             <tbody>
                 <tr><th>Middelvann</th><th>Normalnull</th><th>Sjøkartnull</th></tr>
-                <tr><td>139 cm</td><td>120 cm</td><td>100 cm</td></tr>
+                <tr><td>0</td><td>0</td><td>0</td></tr>
             </tbody>
         </table>
     </left-content>
