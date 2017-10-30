@@ -1,6 +1,43 @@
 var map;
 
 function initMap() {
+
+   /* var input = document.getElementById('pac-input');
+    var infowindowContent = document.getElementById('infowindow-content');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+    autocomplete.bindTo('bounds', map);
+
+    autocomplete.addListener('place_changed', function() {
+        var place = autocomplete.getPlace();
+        var marker = new google.maps.Marker({
+            position: honefoss,
+            map: map
+              //icon: 'resource/cat.jpg'
+          });
+
+        if(place.geometry.viewport) {
+            map.fitBounds(place.geometry.viewport);
+        } else {
+            map.setCenter(place.geometry.viewport);
+        }
+    });
+
+    marker.setPosition(place.geometry.location);
+
+    var address = '';
+    if (place.address_components) {
+      address = [
+        (place.address_components[0] && place.address_components[0].short_name || ''),
+        (place.address_components[1] && place.address_components[1].short_name || ''),
+        (place.address_components[2] && place.address_components[2].short_name || '')
+      ].join(' ');
+    }
+
+    infowindowContent.children['place-icon'].src = place.icon;
+    infowindowContent.children['place-name'].textContent = place.name;
+    infowindowContent.children['place-address'].textContent = address;
+    infowindow.open(map, marker);
+*/
     var honefoss = {lat: 60.169472, lng: 10.256355};
     map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,
@@ -20,6 +57,7 @@ function initMap() {
 
     google.maps.event.addListener(map, 'click', function(e) {
         placeMarker(e.latLng, map, markers)
+        makeTable();
     });
 
     google.maps.event.addListener(marker, 'click', function(e) {
@@ -43,6 +81,11 @@ function initMap() {
     //document.getElementById('coordinates').value = marker.position;
   }
 
+  
+  hei
+  
+  
+  
   function removeMarker(marker, markers) {
       marker.setMap(null);
       //todo: fjern marker fra markers
@@ -81,5 +124,8 @@ function initMap() {
         
     }
       
+    function makeTable() {
+        document.getElement
+    }
       
 
