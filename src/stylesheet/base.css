@@ -30,9 +30,10 @@ table {
     border: 1px solid black;
     text-align:center;
     margin: auto;
+    margin-bottom: 10px;
 }
 
-table tbody tr th{
+table td {
     border: 1px solid black;
 }
 table tbody tr td{

@@ -21,7 +21,6 @@ function initMap() {
 
     google.maps.event.addListener(map, 'click', function(e) {
         placeMarker(e.latLng, map, markers)
-        makeTable();
     });
 
     google.maps.event.addListener(marker, 'click', function(e) {
@@ -42,6 +41,7 @@ function initMap() {
       });
 
     markers.push(marker);
+    makeTable(marker);
     //document.getElementById('coordinates').value = marker.position;
   }
   
@@ -85,23 +85,42 @@ function initMap() {
         
     }
       
-    function makeTable() {
+    function makeTable(marker) {
 
         var table = document.createElement('table');
         var tbody = document.createElement('tbody');
 
-        var thnull = document.createElement('th');
+        var th = document.createElement('th');
+        var th2 = document.createElement('th');
 
         var trow = document.createElement('tr');
+
+        var trow2 = document.createElement('tr');
         var td = document.createElement('td');
+        var td2 = document.createElement('td');
+        var tdh = document.createElement('td');
+        var tdh2 = document.createElement('td');
+        
+        table.id = 'data';
+
+
 
         
-        table.appendChild(document.createElement('tbody'));
-        tbody.appendChild(thnull);
+        tdh.innerHTML = "Middelvann";
+        tdh2.innerHTML = "Sjøkartnull";
+        trow.appendChild(tdh);
+        trow.appendChild(tdh2);
 
-        tbody.appendChild(trow);
+        td.innerHTML = marker.position;
+        td2.innerHTML = marker.position;
+        
+        trow2.appendChild(td);
+        trow2.appendChild(td2);
 
-        trow.appendChild(td);
+        table.appendChild(trow);
+        table.appendChild(trow2);
+        
+
 
         document.getElementById('left-content').appendChild(table);
 
