@@ -55,7 +55,7 @@ function initMap() {
       } 
      
     }
-
+    /*
      function placesSearch() {
         var location = document.getElementById('search');
 
@@ -65,6 +65,7 @@ function initMap() {
         //alert(coordinates);
 
     }
+    */
 
     function readResponse(url) {
         var parser = new DOMParser();
