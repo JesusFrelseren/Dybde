@@ -2,9 +2,9 @@ var map;
 
 function initMap() {
 
-    var honefoss = {lat: 60.16020518963434, lng: 10.261206328868866};
+    var honefoss = {lat: 60.15020518963434, lng: 10.261206328868866};
     map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 20,
+      zoom: 13,
       center: honefoss,
       fullscreenControl: false,
       streetViewControl: false,
