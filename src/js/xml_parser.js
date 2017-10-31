@@ -22,5 +22,21 @@ function readResponse(lat, lon, time) {
     
     return xmlDoc.getElementsByTagName('location')
 }
+function timestamp () {
+    now = new Date();
+    year = "" + now.getFullYear();
+    month = "" + (now.getMonth() + 1); 
+        if (month.length == 1) { 
+            month = "0" + month; 
+        }
+    day = "" + now.getDate(); 
+        if (day.length == 1) { 
+            day = "0" + day; 
+        }
+    var out="";
+    out+= year + "-" + month + "-" + day ;
+    alert(out);
+    return year + "-" + month + "-" + day ;
+  }
 
   

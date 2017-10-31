@@ -23,11 +23,14 @@ function initMap() {
     google.maps.event.addListener(map, 'click', function(e) {
         placeMarker(e.latLng, map, markers)
         readResponse(e.latLng.lat(), e.latLng.lng());
+        timestamp()
+        
 
     });
 
     google.maps.event.addListener(marker, 'click', function(e) {
         removeMarker(marker, markers)
+        
     });
 
 }
