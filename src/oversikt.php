@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylesheet/table.css" type="text/css">
     <script src="js/kart.js" defer></script>
     <script src="js/table_generation.js" defer></script>
+    <script src="js/xml_parser.js" defer></script>
     <meta charset="UTF-8">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap&libraries=places"
   type="text/javascript"></script>
