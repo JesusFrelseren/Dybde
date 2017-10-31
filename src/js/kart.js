@@ -21,9 +21,10 @@ function initMap() {
     var markers = [marker];
 
     google.maps.event.addListener(map, 'click', function(e) {
+        timestamp()
         placeMarker(e.latLng, map, markers)
         readResponse(e.latLng.lat(), e.latLng.lng());
-        timestamp()
+        
         
 
     });

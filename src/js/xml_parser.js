@@ -8,6 +8,7 @@ function readResponse(lat, lon, time) {
     var place = "";
     alert(lat);
     alert(lon);
+    var time = timestamp();
     var url = "api.sehavniva.no/tideapi.php?lat="+lat+"&lon="+lon+"&fromtime="+time+"T00%3A00&totime="
         +time+"T01%3A00&datatype=all&refcode=cd&place="+place+"&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
     alert(url);
@@ -33,9 +34,7 @@ function timestamp () {
         if (day.length == 1) { 
             day = "0" + day; 
         }
-    var out="";
-    out+= year + "-" + month + "-" + day ;
-    alert(out);
+    
     return year + "-" + month + "-" + day ;
   }
 
