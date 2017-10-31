@@ -17,6 +17,7 @@
 <body>
     <header>
         <p id="title">Vannstand</p>
+        <input type="text" id="status">
         <!--<input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">-->
     </header>
     <div id="left-content">
