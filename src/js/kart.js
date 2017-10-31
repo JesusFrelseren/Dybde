@@ -60,20 +60,4 @@ function initMap() {
      
     }
 
-    function readResponse(url) {
-        var parser = new DOMParser();
-        var xmlDoc = parser.parseFromString(url, 'text/xml');
-        var tmp = [];
-
-        tmp.push(xmlDoc.getElementsByTagName('location')[0].childNodes[0].nodeValue);
-        tmp.push(xmlDoc.getElementsByTagName('location')[0].childNodes[1].nodeValue);
-        alert(tmp);
-        return xmlDoc.getElementsByTagName('location')
-    }
-
-    function returnCoordinates(xml) {
-        
-    }
-      
-
-      
+    
