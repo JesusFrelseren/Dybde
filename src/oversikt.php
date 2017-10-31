@@ -26,7 +26,10 @@
             <p class="location">Stedsnavn, koordinater</p>
             <table id="data">
                 <tbody>
-                    <tr><th>Middelvann</th><th>Normalnull</th><th>Sjøkartnull</th></tr>
+                    <tr><th>Vannstand</th>
+                    <th>Middelvann</th>
+                    <th>Normalnull</th>
+                    <th>Sjøkartnull</th></tr>
                     <tr><td>0</td><td>0</td><td>0</td></tr>
                 </tbody>
             </table>
