@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<tide>
+    <meta licenseurl="http://kartverket.no/data/lisens/"/>
+    <locationlevel unit="cm" reflevel="CD">
+        <location name="STAVANGER" code="SVG" latitude="58.974339" longitude="5.730121" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.13"/>
+        <reflevel code="HAT" value="111.4" name="Høyeste astronomiske tidevann" descr="Høyeste mulige vannstand under midlere meteorologiske forhold" type="ASTROREF"/>
+        <reflevel code="MHWS" value="88.3" name="Middel spring høyvann" descr="Gjennomsnittet av observerte høyvann i tiden omkring ny- og fullmåne (springperiode). " type="ASTRO"/>
+        <reflevel code="MHW" value="81.2" name="Middel høyvann" descr="Gjennomsnittet av alle observerte høyvann i en periode på 19 år. " type="ASTROREF"/>
+        <reflevel code="NN2000" value="74.2" name="Normalnull 2000" descr="Nullnivå i det norske offisielle høydesystemet NN2000" type="REF"/>
+        <reflevel code="MHWN" value="74.1" name="Middel nipp høyvann" descr="Gjennomsnittet av observerte høyvann i tiden omkring halvmåne (nipperiode). " type="ASTRO"/>
+        <reflevel code="NN1954" value="66.8" name="Normalnull 1954" descr="Nullnivå i det norske nasjonale høydesystemet fra 1954" type="REF"/>
+        <reflevel code="MSL" value="65.3" epoch="1996-2014" name="Middelvann (1996-2014)" descr="Gjennomsnittlig høyde av sjøens overflate på et sted over en periode på 19 år" type="REF"/>
+        <reflevel code="MLWN" value="56.5" name="Middel nipp lavvann" descr="Gjennomsnittet av observerte lavvann i tiden omkring halvmåne (nipperiode). " type="ASTRO"/>
+        <reflevel code="MLW" value="49.4" name="Middel lavvann" descr="Gjennomsnittet av alle observerte lavvann i en periode på 19 år. " type="ASTRO"/>
+        <reflevel code="MLWS" value="42.3" name="Middel spring lavvann" descr="Gjennomsnittet av observerte høyvann i tiden omkring ny- og fullmåne (springperiode). " type="ASTRO"/>
+        <reflevel code="LAT" value="20.0" name="Laveste astronomiske tidevann" descr="Laveste mulige vannstand under midlere meteorologiske forhold" type="ASTRO"/>
+        <reflevel code="CD" value="0.0" name="Sjøkartnull" descr="Nullnivå for dybder i sjøkart og høyder i tidevannstabellen" type="REF"/>
+    </locationlevel>
+</tide>

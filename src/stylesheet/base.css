@@ -12,7 +12,7 @@
     height: 100%;
     text-align:center;
 }
-right-content{
+#right-content{
     position: absolute;
     right: 0;
     top: 50px;

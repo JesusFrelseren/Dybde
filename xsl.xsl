@@ -3,12 +3,12 @@
 <xsl:output method="xml" encoding="UTF-8"></xsl:output>
   
 <xsl:template match="standard">
-    <data>
+    <vanndata>
         <vannstand></vannstand>
         <middelvann></middelvann>
         <normalnull></normalnull>
         <sjøkartnull></sjøkartnull>
-    </data>
+    </vanndata>
   </xsl:template>
  
     

@@ -1,4 +1,7 @@
+<?php
+    $vanndata = new SimpleXMLElement("kompilert.xml", 2, true);
 
+?>
 <html>
 <head>
     <title>Vannstand</title>
@@ -17,8 +20,7 @@
 <body>
     <header>
         <p id="title">Vannstand</p>
-        <input type="text" id="status">
-        <!--<input type="text" id="coordinates" value="(60.169353963123186, 10.256359577178955)">-->
+        <input type="text" id="coordinates" formmethod="post" value="fsdfsfsd">
     </header>
     <div id="left-content">
 
@@ -30,15 +32,21 @@
                     <th>Middelvann</th>
                     <th>Normalnull</th>
                     <th>Sjøkartnull</th></tr>
-                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                    <tr>
+                    <?php
+                    var_dump($_POST);
+                    foreach($vanndata as $data)
+                        echo("<td>$data</td>");
+                    ?>
+                <tr>
                 </tbody>
             </table>
         </section>
 </div>
-    <right-content>
+    <div id="right-content">
     <div id="map"></div>
     
-    </right-content>
+    </div>
 
 </body>
 </html>
