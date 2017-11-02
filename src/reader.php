@@ -1,25 +1,4 @@
 <?php 
-    /*$root = '<root></root>';
-    $domdoc = new DOMDocument();
-    $vannstand = new DOMDocument();
-    $domdoc->loadXML($root);
-
-    //Load kilde historisk
-
-    $vannstand->load("../XML/historisk.xml");
-    $vannstand2 = $domdoc->importNode($vannstand->firstChild, true);
-    $domdoc->firstChild->appendChild($vannstand2);
-
-
-    //Load kilde vannstand
-    $vannstand->load("../XML/vannstand.xml");
-    $vannstand2 = $domdoc->importNode($vannstand->firstChild, true);
-    $domdoc->firstChild->appendChild($vannstand2);
-
-    
-    echo($domdoc->save("sammensatt.xml"));
-*/
-
     $output = new DOMDocument();
     $output->load("../XML/vanndata.xml");
     $xsldoc = new DOMDocument();
@@ -33,5 +12,17 @@
     $fil = fopen("../XML/sammensatt.xml", "w");
     fwrite($fil, $xslresultat);
     fclose($fil);
+
+    // masse
+    $url = "../xml/sammensatt.xml";
+    $sxml = simplexml_load_file($url);
+
+    foreach($sxml->locationlevel->children() as $noe){
+        if($noe["code"] == "LAT"){
+            $value = $noe["value"];
+            
+        }
+        
+    }
 
 ?>
