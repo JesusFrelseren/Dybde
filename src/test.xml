@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root><tide>
+    <meta licenseurl="http://kartverket.no/data/lisens/"/>
+    <locationlevel unit="cm" reflevel="CD">
+        <location name="STAVANGER" code="SVG" latitude="58.974339" longitude="5.730121" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.13"/>
+        <reflevel code="HAT" value="111.4" name="H&#xF8;yeste astronomiske tidevann" descr="H&#xF8;yeste mulige vannstand under midlere meteorologiske forhold" type="ASTROREF"/>
+        <reflevel code="MHWS" value="88.3" name="Middel spring h&#xF8;yvann" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
+        <reflevel code="MHW" value="81.2" name="Middel h&#xF8;yvann" descr="Gjennomsnittet av alle observerte h&#xF8;yvann i en periode p&#xE5; 19 &#xE5;r. " type="ASTROREF"/>
+        <reflevel code="NN2000" value="74.2" name="Normalnull 2000" descr="Nullniv&#xE5; i det norske offisielle h&#xF8;ydesystemet NN2000" type="REF"/>
+        <reflevel code="MHWN" value="74.1" name="Middel nipp h&#xF8;yvann" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+        <reflevel code="NN1954" value="66.8" name="Normalnull 1954" descr="Nullniv&#xE5; i det norske nasjonale h&#xF8;ydesystemet fra 1954" type="REF"/>
+        <reflevel code="MSL" value="65.3" epoch="1996-2014" name="Middelvann (1996-2014)" descr="Gjennomsnittlig h&#xF8;yde av sj&#xF8;ens overflate p&#xE5; et sted over en periode p&#xE5; 19 &#xE5;r" type="REF"/>
+        <reflevel code="MLWN" value="56.5" name="Middel nipp lavvann" descr="Gjennomsnittet av observerte lavvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+        <reflevel code="MLW" value="49.4" name="Middel lavvann" descr="Gjennomsnittet av alle observerte lavvann i en periode p&#xE5; 19 &#xE5;r. " type="ASTRO"/>
+        <reflevel code="MLWS" value="42.3" name="Middel spring lavvann" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
+        <reflevel code="LAT" value="20.0" name="Laveste astronomiske tidevann" descr="Laveste mulige vannstand under midlere meteorologiske forhold" type="ASTRO"/>
+        <reflevel code="CD" value="0.0" name="Sj&#xF8;kartnull" descr="Nullniv&#xE5; for dybder i sj&#xF8;kart og h&#xF8;yder i tidevannstabellen" type="REF"/>
+    </locationlevel>
+</tide><tide>
+<locationdata>
+<location name="HARSTAD" code="HAR" latitude="68.798330" longitude="16.541650" place="HARSTAD"/>
+<reflevelcode>CD</reflevelcode>
+<data type="prediction" unit="cm">
+<waterlevel value="114.1" time="2017-10-29T00:00:00+01:00" flag="pre"/>
+</data>
+</locationdata>
+</tide></root>

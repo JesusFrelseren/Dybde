@@ -1,6 +1,5 @@
 <?php
-    $vanndata = new SimpleXMLElement("kompilert.xml", 2, true);
-
+    include("reader.php");
 ?>
 <html>
 <head>
@@ -32,13 +31,6 @@
                     <th>Middelvann</th>
                     <th>Normalnull</th>
                     <th>Sjøkartnull</th></tr>
-                    <tr>
-                    <?php
-                    var_dump($_POST);
-                    foreach($vanndata as $data)
-                        echo("<td>$data</td>");
-                    ?>
-                <tr>
                 </tbody>
             </table>
         </section>
