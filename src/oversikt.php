@@ -19,9 +19,14 @@
 <body>
     <header>
         <p id="title">Vannstand</p>
-        <input type="text" id="coordinates" formmethod="post" value="fsdfsfsd">
     </header>
     <div id="left-content">
+    <form method="POST" id="hent" action="oversikt.php">
+        <input type="text" name="lng" id="lng">
+        <input type="text" name="lat" id="lat">
+        <input type="submit" value="Submit">
+
+    </form>
 
         <section class="depth-statistics">
             <p class="location">Stedsnavn, koordinater</p>

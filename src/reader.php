@@ -1,20 +1,57 @@
 <?php 
+ 
+    var_dump($_POST);
+    //63.9
+    //9.3
+    $lat = $_POST['lat'];
+    $lng = $_POST['lng'];
+    lagreKilder($lat, $lng);
+    $res = genererSammensattXML();
+    echo($res);
+    lagreSammensattXML($res);
+
+function lagreKilder($lat, $lng) {
+
+    //Henter og lagrer vannstandsdata
+    $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=Egersund&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
+    echo($url);
+    $external = fopen($url, "r");
+    $target = fopen("XML/vannstand.xml", "w");
+    $content = fread($external, 8192);
+    fwrite($target, $content);
+
+    //Henter og lagrer historiske vannstandsdata
+    $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=Egersund&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
+    $external = fopen($url, "r");
+    $target = fopen("XML/historisk.xml", "w");
+    $content = fread($external, 8192);
+    fwrite($target, $content);
+}
+
+function genererSammensattXML() {
+    
+    //Append XML-dokumentet sin root-node
     $output = new DOMDocument();
-    $output->load("../XML/vanndata.xml");
+    $output->load("XML/vanndata.xml");
+    
     $xsldoc = new DOMDocument();
-    $xsldoc->load("../XML/merge.xsl");
+    $xsldoc->load("XML/merge.xsl");        
     
     $xslt = new XSLTProcessor();
     $xslt->importStyleSheet($xsldoc);
-    $xslresultat = $xslt->transformToXML($output);
-    
-    //Skriv til fil
-    $fil = fopen("../XML/sammensatt.xml", "w");
-    fwrite($fil, $xslresultat);
-    fclose($fil);
+    return $xslt->transformToXML($output);
+}
 
+     
+function lagreSammensattXML($res) {
+    $fil = fopen("XML/sammensatt.xml", "w");
+    fwrite($fil, $res);
+    fclose($fil);
+}
+    
+/*
     // masse
-    $url = "../xml/sammensatt.xml";
+    $url = "XML/sammensatt.xml";
     $sxml = simplexml_load_file($url);
 
     foreach($sxml->locationlevel->children() as $noe){
@@ -23,6 +60,6 @@
             
         }
         
-    }
+    }*/
 
 ?>

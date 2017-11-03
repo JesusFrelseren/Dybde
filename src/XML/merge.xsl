@@ -1,5 +1,3 @@
-<!--Skrevet av Erlend -->
-
 <?xml version="1.0" ?>
 <xsl:transform
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -11,3 +9,4 @@
         </xsl:copy>
     </xsl:template>
 </xsl:transform>
+
