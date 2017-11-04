@@ -21,8 +21,8 @@ function initMap() {
     var markers = [marker];
 
     google.maps.event.addListener(map, 'click', function(e) {
-        timestamp();
         placeMarker(e.latLng, map, markers);
+       // alert();
 
     });
 
@@ -43,19 +43,39 @@ function initMap() {
       google.maps.event.addListener(marker, 'click', function(e) {
           removeMarker(marker)
       });
+    
+      //document.getElementById('lat').value = marker.getPosition().lat();
+      //document.getElementById('lng').value = marker.getPosition().lng();
+
+    
+      submitForm(marker.getPosition().lat(), marker.getPosition().lng());
 
     markers.push(marker);
     //makeTable();
-    var form = document.createElement("form");
-  form.action = "oversikt.php?test=32";
-  //var input = document.createElement('input');
-  //input.value = marker.position.toString();
-  //form.appendChild(input.cloneNode());
-  form.method = "get";
-  form.submit();
-  alert("");
+  }
 
-    //document.getElementById('coordinates').value = marker.position;
+  function submitForm(lat, lng) {
+    //Lag input for lat
+    var latElement = document.createElement('input');
+    latElement.setAttribute("type", "hidden");
+    latElement.value = lat;
+    
+    //Lag input for lng
+    var lngElement = document.createElement('input');
+    lngElement.setAttribute('type', 'hidden');
+    lngElement.value = lng;
+
+    //Lag form
+    var form = document.createElement('form');
+    form.appendChild(latElement);
+    form.appendChild(lngElement);
+    form.method = "POST";
+    form.action = "oversikt.php";
+
+    document.getElementById('left-content').appendChild(form);
+    form.submit();
+
+
   }
   
   

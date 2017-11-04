@@ -21,12 +21,12 @@
         <p id="title">Vannstand</p>
     </header>
     <div id="left-content">
-    <form method="POST" id="hent" action="oversikt.php">
+    <!--<form method="POST" id="hent" action="oversikt.php">
         <input type="text" name="lng" id="lng">
         <input type="text" name="lat" id="lat">
         <input type="submit" value="Submit">
 
-    </form>
+    </form>-->
 
         <section class="depth-statistics">
             <p class="location">Stedsnavn, koordinater</p>
