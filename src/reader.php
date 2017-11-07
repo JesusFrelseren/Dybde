@@ -4,9 +4,15 @@
     var_dump($_POST);
     //63.9
     //9.3
-    $lat = $_POST['lat'];
-    $lng = $_POST['lng'];
-    lagreKilder($lat, $lng);
+    if(isset($_POST['lat'])) {
+        $lat = $_POST['lat'];
+        $lng = $_POST['lng'];    
+        lagreKilder($lat, $lng);
+    }
+
+    $lat = 68;
+    $lng = 10;
+    
     $res = genererSammensattXML();
     echo($res);
     lagreSammensattXML($res);
@@ -19,17 +25,17 @@ function lagreKilder($lat, $lng) {
     $url = "XML/vannstand.xml";
     
     $external = fopen($url, "r");
-    /*$target = fopen("XML/vannstand.xml", "w");
+    $target = fopen("XML/vannstand.xml", "w");
     $content = fread($external, 8192);
-    fwrite($target, $content);*/
+    fwrite($target, $content);
 
     //Henter og lagrer historiske vannstandsdata
     $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=Egersund&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
     $url = "XML/historisk.xml";
     $external = fopen($url, "r");
-    /*$target = fopen("XML/historisk.xml", "w");
+    $target = fopen("XML/historisk.xml", "w");
     $content = fread($external, 8192);
-    fwrite($target, $content);*/
+    fwrite($target, $content);
 }
 
 function genererSammensattXML() {

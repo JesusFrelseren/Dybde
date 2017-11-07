@@ -11,8 +11,8 @@ function initMap() {
       zoom: 13,
       center: honefoss,
       fullscreenControl: false,
-      streetViewControl: false,
-      mapTypeId: 'satellite'
+      streetViewControl: false
+      //mapTypeId: 'satellite'
     });
 
 
@@ -41,13 +41,14 @@ function initMap() {
         //var response = "/";
         var url = "../XML/coordinates.txt";
         var file = new XMLHttpRequest();
+        var response;
         
         file.readyState = XMLHttpRequest.DONE;
         
         file.onreadystatechange = function() {
         
             if (file.readyState === XMLHttpRequest.DONE && file.status === 200) {
-                var response = file.responseText;
+                response = file.responseText;
                 alert(response);
                 
             }
