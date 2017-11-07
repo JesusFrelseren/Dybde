@@ -1,8 +1,12 @@
+// Skrevet av Erlend
+
 var map;
 
 function initMap() {
 
-    var honefoss = {lat: 60.15020518963434, lng: 10.261206328868866};
+    alert(readCoordinates());
+    var honefoss = {lat: 60.170241, lng: 10.2548533};
+
     map = new google.maps.Map(document.getElementById('map'), {
       zoom: 13,
       center: honefoss,
@@ -33,6 +37,29 @@ function initMap() {
 
 }
 
+    function readCoordinates() {
+        //var response = "/";
+        var url = "../XML/coordinates.txt";
+        var file = new XMLHttpRequest();
+        
+        file.readyState = XMLHttpRequest.DONE;
+        
+        file.onreadystatechange = function() {
+        
+            if (file.readyState === XMLHttpRequest.DONE && file.status === 200) {
+                var response = file.responseText;
+                alert(response);
+                
+            }
+        }
+        //}
+        file.open("GET", url, true);
+        file.send(null);
+        return response;
+        
+
+    }
+
   function placeMarker(position, map, markers) {
       var marker = new google.maps.Marker({
           position: position,
@@ -56,13 +83,11 @@ function initMap() {
 
   function submitForm(lat, lng) {
     //Lag input for lat
-    var latElement = document.createElement('input');
-    latElement.setAttribute("type", "hidden");
+    var latElement = document.getElementById('lat');
     latElement.value = lat;
     
     //Lag input for lng
-    var lngElement = document.createElement('input');
-    lngElement.setAttribute('type', 'hidden');
+    var lngElement = document.getElementById('lng');
     lngElement.value = lng;
 
     //Lag form

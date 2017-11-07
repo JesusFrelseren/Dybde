@@ -17,6 +17,8 @@
 
 </head>
 <body>
+    <input type="hidden" id="lat">
+    <input type="hidden" id="lng">
     <header>
         <p id="title">Vannstand</p>
     </header>
