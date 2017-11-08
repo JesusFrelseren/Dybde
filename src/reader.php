@@ -21,7 +21,8 @@
 function lagreKilder($lat, $lng) {
 
     //Henter og lagrer vannstandsdata
-    $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=Egersund&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
+    $url = "api.sehavniva.no/tideapi.php?lat=".lat."&lon=".lon."&fromtime=".time."T".pastClock+"%3A00&totime="
+    +time+"T"+clock+"%3A00&datatype=all&refcode=cd&place="+place+"&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata;
     $url = "XML/vannstand.xml";
     
     $external = fopen($url, "r");
