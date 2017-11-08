@@ -71,5 +71,33 @@ function lagreSammensattXML($res) {
         }
         
     }*/
+    function XMLReader(){
+        $url = "sammensatt.xml";
+        $sxml = simplexml_load_file($url);
+        $LAT="";
+        $HAT="";
+        $Middelvann="";
+        $Sjøkartnull="";
+        $Normalnull="";
 
+           foreach($sxml->tide->locationlevel->children() as $data){
+               if($data["code"] == "HAT"){
+                   $HAT = $data["value"]; 
+               }
+                if($data["code"] == "MHW"){
+                            $Middelvann = $data["value"]; 
+                        }
+                if($data["code"] == "NN2000"){
+                            $Normalnull = $data["value"]; 
+                        }
+                if($data["code"] == "LAT"){
+                            $LAT = $data["value"]; 
+                        }
+                if($data["code"] == "CD"){
+                            $Sjøkartnull = $data["value"]; 
+                        }    
+            
+                    }
+                    echo('<tr><td>'.$HAT.' cm</td><td>'.$Middelvann.' cm</td><td>'.$Normalnull.' cm</td><td>'.$LAT.' cm</td></tr>');
+       }
 ?>

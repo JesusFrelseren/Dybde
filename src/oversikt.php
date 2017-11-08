@@ -38,6 +38,7 @@
                     <th>Middelvann</th>
                     <th>Normalnull</th>
                     <th>Sjøkartnull</th></tr>
+                    <?php XMLReader();?>
                 </tbody>
             </table>
         </section>
