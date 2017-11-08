@@ -33,7 +33,7 @@
     </form>-->
 
         <section class="depth-statistics">
-            <p class="location">Stedsnavn, koordinater</p>
+            <p class="location"><?php XMLNameReader();?></p>
             <table id="data">
                 <tbody>
                     <tr><th>Vannstand</th>

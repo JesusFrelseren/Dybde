@@ -72,6 +72,18 @@ function lagreSammensattXML($res) {
         }
         
     }*/
+    function XMLNameReader(){
+        $url = "sammensatt.xml";
+        $sxml = simplexml_load_file($url);
+        $i=1;
+        foreach($sxml->tide->locationlevel->location as $data){
+                $sted=$data["name"];
+                $latitude=$data["latitude"];
+                $longitude=$data["longitude"];
+            
+        }
+            echo($sted."    Koordinater: ".$latitude." , ".$longitude);
+    }
     function XMLReader(){
         $url = "sammensatt.xml";
         $sxml = simplexml_load_file($url);
