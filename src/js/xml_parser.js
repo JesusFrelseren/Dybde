@@ -11,10 +11,8 @@ function readResponse(lat, lon, time) {
     var url = "api.sehavniva.no/tideapi.php?lat="+lat+"&lon="+lon+"&fromtime="+time+"T00%3A00&totime="
         +time+"T01%3A00&datatype=all&refcode=cd&place="+place+"&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
 
-    urlVannstand = "http://api.sehavniva.no/tideapi.php?lat="+lat+"&lon="+lon+"&fromtime="+time+"%3A00&totime="+time+"%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata"
-    urlHistorie = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=nb&lat="+lat+"&lon="+lon+"&"+place+"=&refcode=cd&file=xml&flag=astro"
-    alert(urlVannstand);
-    alert(urlHistorie);
+    urlVannstand = "http://api.sehavniva.no/tideapi.php?lat="+lat+"&lon="+lon+"&fromtime="+time+"%3A00&totime="+time+"%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
+    urlHistorie = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=nb&lat="+lat+"&lon="+lon+"&"+place+"=&refcode=cd&file=xml&flag=astro";
     
     
 
@@ -29,8 +27,6 @@ function readResponse(lat, lon, time) {
     parser.open("GET", urlHistorie, false);
     parser.send();
     alert(parser.responseText);
-    
-
 }
 // skrevet av Tobias
 function timestamp () {

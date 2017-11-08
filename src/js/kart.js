@@ -38,8 +38,8 @@ function initMap() {
 }
 
     function readCoordinates() {
-        //var response = "/";
-        var url = "../XML/coordinates.txt";
+        // var response = "/";
+        var url = "../src/XML/coordinates.txt";
         var file = new XMLHttpRequest();
         var response;
         
