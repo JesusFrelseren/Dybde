@@ -17,6 +17,8 @@
 
 </head>
 <body>
+
+
     <input type="hidden" id="lat">
     <input type="hidden" id="lng">
     <header>
@@ -42,6 +44,7 @@
                 </tbody>
             </table>
         </section>
+        <button onclick="alert(readResponse())">Click me</button>
 </div>
     <div id="right-content">
     <div id="map"></div>
