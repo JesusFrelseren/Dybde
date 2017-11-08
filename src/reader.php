@@ -10,8 +10,8 @@
         lagreKilder($lat, $lng);
     }
 
-    $lat = 68;
-    $lng = 10;
+    $lat = 58.45133;
+    $lng = 5.9997;
     
     $res = genererSammensattXML();
     echo($res);
@@ -54,6 +54,7 @@ function genererSammensattXML() {
 
      
 function lagreSammensattXML($res) {
+    //åpner fil for skrivning 
     $fil = fopen("XML/sammensatt.xml", "w");
     fwrite($fil, $res);
     fclose($fil);
