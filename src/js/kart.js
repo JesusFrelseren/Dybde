@@ -4,7 +4,7 @@ var map;
 
 function initMap() {
 
-    alert(readCoordinates());
+    readCoordinates();
     var honefoss = {lat: 60.170241, lng: 10.2548533};
 
     map = new google.maps.Map(document.getElementById('map'), {
@@ -26,7 +26,7 @@ function initMap() {
 
     google.maps.event.addListener(map, 'click', function(e) {
         placeMarker(e.latLng, map, markers);
-       // alert();
+        //writeCoordinates();
 
     });
 
@@ -37,20 +37,27 @@ function initMap() {
 
 }
 
+    function writeCoordinates() {
+        var writer = new File(["foo"], "../src/XML/coordinates.txt");
+        writer.open("w");
+        writer.writeln(document.getElementById('lat').value);
+
+        writer.writeln(document.getElementById('lng').value);
+        writer.close();
+
+    }
+
     function readCoordinates() {
         // var response = "/";
         var url = "../src/XML/coordinates.txt";
         var file = new XMLHttpRequest();
         var response;
-        
-        file.readyState = XMLHttpRequest.DONE;
-        
+                
         file.onreadystatechange = function() {
         
             if (file.readyState === XMLHttpRequest.DONE && file.status === 200) {
                 response = file.responseText;
-                alert(response);
-                
+                //alert(response);
             }
         }
         //}
@@ -72,33 +79,34 @@ function initMap() {
           removeMarker(marker)
       });
     
-      //document.getElementById('lat').value = marker.getPosition().lat();
-      //document.getElementById('lng').value = marker.getPosition().lng();
+      
+      document.getElementById('lat').value = marker.getPosition().lat();
+      document.getElementById('lng').value = marker.getPosition().lng();
 
     
       submitForm(marker.getPosition().lat(), marker.getPosition().lng());
 
-    markers.push(marker);
     //makeTable();
   }
 
   function submitForm(lat, lng) {
-    //Lag input for lat
+    /*//Lag input for lat
     var latElement = document.getElementById('lat');
     latElement.value = lat;
     
     //Lag input for lng
     var lngElement = document.getElementById('lng');
-    lngElement.value = lng;
+    lngElement.value = lng;*/
 
     //Lag form
-    var form = document.createElement('form');
-    form.appendChild(latElement);
-    form.appendChild(lngElement);
-    form.method = "POST";
-    form.action = "oversikt.php";
+    //var form = document.createElement('form');
+    //form.appendChild(latElement);
+    //form.appendChild(lngElement);
+    //form.method = "POST";
+    //form.action = "oversikt.php";
 
-    document.getElementById('left-content').appendChild(form);
+    //document.getElementById('left-content').appendChild(form);
+    var form = document.getElementById('submit');
     form.submit();
 
 

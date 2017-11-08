@@ -18,9 +18,20 @@
 </head>
 <body>
 
+    <?php
+    var_dump($_POST);
+    echo
+    ("
+    <form action='oversikt.php' method='post' id='submit'>
+    <input type='hidden' id='lat' name='lat' value=".$_POST['lat'].">
+    <input type='hidden' id='lng' name='lng' value=".$_POST['lng'].">
+    </form>
+    "
+    );
+    
+    ?>
 
-    <input type="hidden" id="lat">
-    <input type="hidden" id="lng">
+    
     <header>
         <p id="title">Vannstand</p>
     </header>
