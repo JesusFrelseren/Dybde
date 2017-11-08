@@ -30,6 +30,7 @@ function readResponse(lat, lon, time) {
     
 
 }
+// skrevet av Tobias
 function timestamp () {
     now = new Date();
     year = "" + now.getFullYear();
