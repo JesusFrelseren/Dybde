@@ -101,4 +101,18 @@ function lagreSammensattXML($res) {
                     }
                     echo('<tr><td>'.$HAT.' cm</td><td>'.$Middelvann.' cm</td><td>'.$Normalnull.' cm</td><td>'.$LAT.' cm</td></tr>');
        }
+
+    function timestamp(){
+        $date = new DateTime();
+        echo($date->format("Y-m-d"));
+    }
+    function clockNow(){
+        $clockN = new DateTime();
+        echo($clockN->format("H"));
+    }
+    function clockPast(){
+        $clockP = new DateTime();
+        $clockP->modify('-3 hours');
+        echo($clockP->format("H"));
+    }
 ?>
