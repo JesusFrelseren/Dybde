@@ -124,18 +124,18 @@ function lagreSammensattXML($res) {
 
     function timestamp(){
         $date = new DateTime();
-        echo $date->format('Y-m-d');
-        return $date; 
+        $res1 = $date->format('Y-m-d');
+        return $res1; 
     }
     function clockNow(){
         $clockN = new DateTime();
-        echo($clockN->format("H"));
-        return $clockN;
+        $res2 = $clockN->format("H");
+        return $res2;
     }
     function clockPast(){
         $clockP = new DateTime();
         $clockP->modify('-3 hours');
-        echo($clockP->format("H"));
-        return $clockP;
+        $res3 =$clockP->format("H");
+        return $res3;
     }
 ?>
