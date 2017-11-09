@@ -22,13 +22,13 @@ function lagreKilder($lat, $lng) {
     $clockN = clockNow();
     $clockP = clockPast();
 
-    $url = "api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$date"."T$clockP%3A00&totime=$date"."T$clockN%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
+    $url = "http://api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$date"."T$clockP%3A00&totime=$date"."T$clockN%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
     //$url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
-    echo $url;
     $external = fopen($url, "r");
     $target = fopen("XML/vannstand.xml", "w");
     $content = fread($external, 8192);
     fwrite($target, $content);
+    fclose($external);
 
     //Henter og lagrer historiske vannstandsdata
     $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
@@ -36,6 +36,7 @@ function lagreKilder($lat, $lng) {
     $target = fopen("XML/historisk.xml", "w");
     $content = fread($external, 8192);
     fwrite($target, $content);
+    fclose($external);
 }
 
     //

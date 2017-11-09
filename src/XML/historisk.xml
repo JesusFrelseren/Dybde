@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<tide>
+<meta licenseurl="http://kartverket.no/data/lisens/"/>
+<locationlevel unit="cm" reflevel="CD">
+<location name="ANDENES" code="ANX" latitude="69.717095" longitude="18.016291" delay="0" factor="1.04" obsname="ANDENES" obscode="ANX" landlift="0.23"/>
+<reflevel code="SAFE3" value="421.6" name="Tryggleiksklasse 3" descr="" type="ADM"/>
+<reflevel code="SAFE2" value="406.4" name="Tryggleiksklasse 2" descr="" type="ADM"/>
+<reflevel code="SAFE1" value="382.6" name="Tryggleiksklasse 1" descr="" type="ADM"/>
+<reflevel code="1000YMAX" value="362.3" name="Høgvatn med 1000 års gjentaksintervall" descr="Ekstremt høyvann som i gjennomsnitt forventes en gang per 1000 år. " type="RETURN"/>
+<reflevel code="200YMAX" value="347.1" name="Høgvatn med 200 års gjentaksintervall" descr="Ekstremt høyvann som i gjennomsnitt forventes en gang per 200 år. " type="RETURN"/>
+<reflevel code="100YMAX" value="340.3" name="Høgvatn med 100 års gjentaksintervall" descr="Ekstremt høyvann som i gjennomsnitt forventes en gang per 100 år. " type="RETURN"/>
+<reflevel code="20YMAX" value="323.5" name="Høgvatn med 20 års gjentaksintervall" descr="Ekstremt høyvann som i gjennomsnitt forventes en gang per 20 år. " type="RETURN"/>
+<reflevel code="5YMAX" value="306.9" name="Høgvatn med 5 års gjentaksintervall" descr="Ekstremt høyvann som i gjennomsnitt forventes en gang per 5 år. " type="RETURN"/>
+<reflevel code="1YMAX" value="288.2" name="Høgvatn med 1 års gjentaksintervall" descr="Ekstremt høyvann som i gjennomsnitt forventes en gang per 1 år." type="RETURN"/>
+<reflevel code="HAT" value="265.9" name="Høgaste astronomiske tidvatn" descr="Høyeste mulige vannstand uten værets virkning " type="ASTROREF"/>
+<reflevel code="MHWS" value="227.9" name="Middel spring høgvatn" descr="Gjennomsnittet av observerte høyvann i tiden omkring ny- og fullmåne (springperiode). " type="ASTRO"/>
+<reflevel code="MHW" value="204.5" name="Middel høgvatn" descr="Gjennomsnittet av alle observerte høgvatn i ein periode på 19 år. " type="ASTROREF"/>
+<reflevel code="MHWN" value="181.1" name="Middel nipp høgvatn" descr="Gjennomsnittet av observerte høyvann i tiden omkring halvmåne (nipperiode). " type="ASTRO"/>
+<reflevel code="NN2000" value="152.1" name="Normalnull 2000" descr="Nullnivå i det norske offisielle høgdesystemet NN2000" type="REF"/>
+<reflevel code="MSL" value="135.3" epoch="1996-2014" name="Middelvatn (1996-2014)" descr="Gjennomsnittleg høgde av sjøoverflata på ein stad over ein periode på 19 år" type="REF"/>
+<reflevel code="MLWN" value="89.5" name="Middel nipp lågvatn" descr="Gjennomsnittet av observerte lavvann i tiden omkring halvmåne (nipperiode). " type="ASTRO"/>
+<reflevel code="MLW" value="66.1" name="Middel lågvatn" descr="Gjennomsnittet av alle observerte lavvann i en periode på 19 år. " type="ASTRO"/>
+<reflevel code="MLWS" value="42.7" name="Middel spring lågvatn" descr="Gjennomsnittet av observerte høyvann i tiden omkring ny- og fullmåne (springperiode). " type="ASTRO"/>
+<reflevel code="CD" value="0.0" name="Sjøkartnull" descr="Nullnivå for djupner i sjøkarta og høgder i tidvatntabellen" type="REF"/>
+<reflevel code="LAT" value="0.0" name="Lågaste astronomiske tidvatn" descr="Lågaste mogelege astronomiske tidvatn utan vêret sin verknad " type="ASTRO"/>
+<reflevel code="1YMIN" value="-12.1" name="Lågvatn med 1 års gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 1 år. " type="RETURN"/>
+<reflevel code="5YMIN" value="-24.2" name="Lågvatn med 5 års gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 5 år. " type="RETURN"/>
+<reflevel code="20YMIN" value="-33.6" name="Lågvatn med 20 års gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 20 år." type="RETURN"/>
+</locationlevel>
+</tide>
