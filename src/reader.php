@@ -125,8 +125,7 @@ function lagreSammensattXML($res) {
     function timestamp(){
         $date = new DateTime();
         echo $date->format('Y-m-d');
-        return $date;
-       
+        return $date; 
     }
     function clockNow(){
         $clockN = new DateTime();
