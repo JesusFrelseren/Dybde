@@ -114,4 +114,18 @@ function lagreSammensattXML($res) {
             echo("Intet");
         }
        }
+
+    function timestamp(){
+        $date = new DateTime();
+        echo($date->format("Y-m-d"));
+    }
+    function clockNow(){
+        $clockN = new DateTime();
+        echo($clockN->format("H"));
+    }
+    function clockPast(){
+        $clockP = new DateTime();
+        $clockP->modify('-3 hours');
+        echo($clockP->format("H"));
+    }
 ?>
