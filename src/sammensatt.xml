@@ -1,2 +1,60 @@
 <?xml version="1.0"?>
-<vanndata><error>Invalid reference level for this station</error><error>Invalid reference level for this station</error></vanndata>
+<vanndata><tide>
+<meta licenseurl="http://kartverket.no/data/lisens/"/>
+<locationlevel unit="cm" reflevel="CD">
+<location name="STAVANGER" code="SVG" latitude="58.951425" longitude="5.756493" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
+<reflevel code="SAFE3" value="266.9" name="Tryggleiksklasse 3" descr="" type="ADM"/>
+<reflevel code="SAFE2" value="258.2" name="Tryggleiksklasse 2" descr="" type="ADM"/>
+<reflevel code="SAFE1" value="244.4" name="Tryggleiksklasse 1" descr="" type="ADM"/>
+<reflevel code="1000YMAX" value="188.7" name="H&#xF8;gvatn med 1000 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1000 &#xE5;r. " type="RETURN"/>
+<reflevel code="200YMAX" value="180.0" name="H&#xF8;gvatn med 200 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 200 &#xE5;r. " type="RETURN"/>
+<reflevel code="100YMAX" value="176.1" name="H&#xF8;gvatn med 100 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 100 &#xE5;r. " type="RETURN"/>
+<reflevel code="20YMAX" value="166.2" name="H&#xF8;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 20 &#xE5;r. " type="RETURN"/>
+<reflevel code="5YMAX" value="156.3" name="H&#xF8;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
+<reflevel code="1YMAX" value="144.9" name="H&#xF8;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1 &#xE5;r." type="RETURN"/>
+<reflevel code="HAT" value="111.4" name="H&#xF8;gaste astronomiske tidvatn" descr="H&#xF8;yeste mulige vannstand uten v&#xE6;rets virkning " type="ASTROREF"/>
+<reflevel code="MHWS" value="88.3" name="Middel spring h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
+<reflevel code="MHW" value="81.2" name="Middel h&#xF8;gvatn" descr="Gjennomsnittet av alle observerte h&#xF8;gvatn i ein periode p&#xE5; 19 &#xE5;r. " type="ASTROREF"/>
+<reflevel code="NN2000" value="74.3" name="Normalnull 2000" descr="Nullniv&#xE5; i det norske offisielle h&#xF8;gdesystemet NN2000" type="REF"/>
+<reflevel code="MHWN" value="74.1" name="Middel nipp h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+<reflevel code="NN1954" value="66.8" name="Normalnull 1954" descr="Nullniv&#xE5; i det norske nasjonale h&#xF8;gdesystemet fr&#xE5; 1954" type="REF"/>
+<reflevel code="MSL" value="65.3" epoch="1996-2014" name="Middelvatn (1996-2014)" descr="Gjennomsnittleg h&#xF8;gde av sj&#xF8;overflata p&#xE5; ein stad over ein periode p&#xE5; 19 &#xE5;r" type="REF"/>
+<reflevel code="MLWN" value="56.5" name="Middel nipp l&#xE5;gvatn" descr="Gjennomsnittet av observerte lavvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+<reflevel code="MLW" value="49.4" name="Middel l&#xE5;gvatn" descr="Gjennomsnittet av alle observerte lavvann i en periode p&#xE5; 19 &#xE5;r. " type="ASTRO"/>
+<reflevel code="MLWS" value="42.3" name="Middel spring l&#xE5;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
+<reflevel code="LAT" value="20.0" name="L&#xE5;gaste astronomiske tidvatn" descr="L&#xE5;gaste mogelege astronomiske tidvatn utan v&#xEA;ret sin verknad " type="ASTRO"/>
+<reflevel code="1YMIN" value="3.9" name="L&#xE5;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 1 &#xE5;r. " type="RETURN"/>
+<reflevel code="CD" value="0.0" name="Sj&#xF8;kartnull" descr="Nullniv&#xE5; for djupner i sj&#xF8;karta og h&#xF8;gder i tidvatntabellen" type="REF"/>
+<reflevel code="5YMIN" value="-3.6" name="L&#xE5;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
+<reflevel code="20YMIN" value="-10.0" name="L&#xE5;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 20 &#xE5;r." type="RETURN"/>
+</locationlevel>
+</tide><tide>
+<meta licenseurl="http://kartverket.no/data/lisens/"/>
+<locationlevel unit="cm" reflevel="CD">
+<location name="STAVANGER" code="SVG" latitude="58.951425" longitude="5.756493" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
+<reflevel code="SAFE3" value="266.9" name="Tryggleiksklasse 3" descr="" type="ADM"/>
+<reflevel code="SAFE2" value="258.2" name="Tryggleiksklasse 2" descr="" type="ADM"/>
+<reflevel code="SAFE1" value="244.4" name="Tryggleiksklasse 1" descr="" type="ADM"/>
+<reflevel code="1000YMAX" value="188.7" name="H&#xF8;gvatn med 1000 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1000 &#xE5;r. " type="RETURN"/>
+<reflevel code="200YMAX" value="180.0" name="H&#xF8;gvatn med 200 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 200 &#xE5;r. " type="RETURN"/>
+<reflevel code="100YMAX" value="176.1" name="H&#xF8;gvatn med 100 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 100 &#xE5;r. " type="RETURN"/>
+<reflevel code="20YMAX" value="166.2" name="H&#xF8;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 20 &#xE5;r. " type="RETURN"/>
+<reflevel code="5YMAX" value="156.3" name="H&#xF8;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
+<reflevel code="1YMAX" value="144.9" name="H&#xF8;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1 &#xE5;r." type="RETURN"/>
+<reflevel code="HAT" value="111.4" name="H&#xF8;gaste astronomiske tidvatn" descr="H&#xF8;yeste mulige vannstand uten v&#xE6;rets virkning " type="ASTROREF"/>
+<reflevel code="MHWS" value="88.3" name="Middel spring h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
+<reflevel code="MHW" value="81.2" name="Middel h&#xF8;gvatn" descr="Gjennomsnittet av alle observerte h&#xF8;gvatn i ein periode p&#xE5; 19 &#xE5;r. " type="ASTROREF"/>
+<reflevel code="NN2000" value="74.3" name="Normalnull 2000" descr="Nullniv&#xE5; i det norske offisielle h&#xF8;gdesystemet NN2000" type="REF"/>
+<reflevel code="MHWN" value="74.1" name="Middel nipp h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+<reflevel code="NN1954" value="66.8" name="Normalnull 1954" descr="Nullniv&#xE5; i det norske nasjonale h&#xF8;gdesystemet fr&#xE5; 1954" type="REF"/>
+<reflevel code="MSL" value="65.3" epoch="1996-2014" name="Middelvatn (1996-2014)" descr="Gjennomsnittleg h&#xF8;gde av sj&#xF8;overflata p&#xE5; ein stad over ein periode p&#xE5; 19 &#xE5;r" type="REF"/>
+<reflevel code="MLWN" value="56.5" name="Middel nipp l&#xE5;gvatn" descr="Gjennomsnittet av observerte lavvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+<reflevel code="MLW" value="49.4" name="Middel l&#xE5;gvatn" descr="Gjennomsnittet av alle observerte lavvann i en periode p&#xE5; 19 &#xE5;r. " type="ASTRO"/>
+<reflevel code="MLWS" value="42.3" name="Middel spring l&#xE5;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
+<reflevel code="LAT" value="20.0" name="L&#xE5;gaste astronomiske tidvatn" descr="L&#xE5;gaste mogelege astronomiske tidvatn utan v&#xEA;ret sin verknad " type="ASTRO"/>
+<reflevel code="1YMIN" value="3.9" name="L&#xE5;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 1 &#xE5;r. " type="RETURN"/>
+<reflevel code="CD" value="0.0" name="Sj&#xF8;kartnull" descr="Nullniv&#xE5; for djupner i sj&#xF8;karta og h&#xF8;gder i tidvatntabellen" type="REF"/>
+<reflevel code="5YMIN" value="-3.6" name="L&#xE5;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
+<reflevel code="20YMIN" value="-10.0" name="L&#xE5;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 20 &#xE5;r." type="RETURN"/>
+</locationlevel>
+</tide></vanndata>

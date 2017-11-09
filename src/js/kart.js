@@ -6,6 +6,7 @@ function initMap() {
 
     var lat = document.getElementById('lat').value;
     var lng = document.getElementById('lng').value;
+    var zoom = document.getElementById('zoom').value;
     var position = {lat: parseFloat(lat), lng: parseFloat(lng)};
 
     map = new google.maps.Map(document.getElementById('map'), {
@@ -44,6 +45,7 @@ function initMap() {
 
       document.getElementById('lat').value = marker.getPosition().lat();
       document.getElementById('lng').value = marker.getPosition().lng();
+      document.getElementById('zoom').value = map.getZoom();
 
   }
 

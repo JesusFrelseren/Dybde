@@ -25,6 +25,7 @@
     <form action='oversikt.php' method='post' id='submit'>
     <input type='hidden' id='lat' name='lat' value=".$_POST['lat'].">
     <input type='hidden' id='lng' name='lng' value=".$_POST['lng'].">
+    <input type='hidden' id='zoom' name='zoom' value=".$_POST['zoom'].">
     </form>
     "
         );
@@ -34,6 +35,7 @@
     <form action='oversikt.php' method='post' id='submit'>
     <input type='hidden' id='lat' name='lat' value='58.87022969976571'>
     <input type='hidden' id='lng' name='lng' value='5.752716064453125''>
+    <input type='hidden' id='zoom' name='zoom' value='5.752716064453125''>
     </form>
     "
         );
