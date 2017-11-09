@@ -60,10 +60,10 @@
             <p class="location"><?php XMLNameReader();?></p>
             <table id="data">
                 <tbody>
-                    <tr><th>Vannstand</th>
+                    <tr><th>HAT</th>
                     <th>Middelvann</th>
                     <th>Normalnull</th>
-                    <th>Sjøkartnull</th></tr>
+                    <th>LAT/Sjøkartnull</th></tr>
                     <?php XMLReader();?>
                 </tbody>
             </table>

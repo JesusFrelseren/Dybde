@@ -2,7 +2,7 @@
 <vanndata><tide>
 <meta licenseurl="http://kartverket.no/data/lisens/"/>
 <locationlevel unit="cm" reflevel="CD">
-<location name="STAVANGER" code="SVG" latitude="58.963729" longitude="5.838538" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
+<location name="STAVANGER" code="SVG" latitude="58.957445" longitude="5.859904" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
 <reflevel code="SAFE3" value="266.7" name="Tryggleiksklasse 3" descr="" type="ADM"/>
 <reflevel code="SAFE2" value="258.0" name="Tryggleiksklasse 2" descr="" type="ADM"/>
 <reflevel code="SAFE1" value="244.1" name="Tryggleiksklasse 1" descr="" type="ADM"/>
@@ -31,7 +31,7 @@
 </tide><tide>
 <service cominfo="Vi har problem med innsamling av data fr&#xE5; m&#xE5;lestasjonane, men reknar med at det skal vera i orden i l&#xF8;pet av dagen."/>
 <locationdata>
-<location name="STAVANGER" code="SVG" latitude="58.963729" longitude="5.838538" place="STAVANGER"/>
+<location name="STAVANGER" code="SVG" latitude="58.957445" longitude="5.859904" place="STAVANGER"/>
 <reflevelcode>CD</reflevelcode>
 <data type="observation" unit="cm">
 <waterlevel value="85.1" time="2017-11-09T10:00:00+01:00" flag="obs"/>

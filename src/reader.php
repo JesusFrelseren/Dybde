@@ -108,7 +108,7 @@ function lagreSammensattXML($res) {
                     if ($data["code"] == "HAT") {
                         $HAT = $data["value"];
                     }
-                    if ($data["code"] == "MHW") {
+                    if ($data["code"] == "MSL") {
                         $Middelvann = $data["value"];
                     }
                     if ($data["code"] == "NN2000") {

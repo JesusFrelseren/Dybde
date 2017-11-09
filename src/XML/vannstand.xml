@@ -1,7 +1,7 @@
 <tide>
 <service cominfo="Vi har problem med innsamling av data frå målestasjonane, men reknar med at det skal vera i orden i løpet av dagen."/>
 <locationdata>
-<location name="STAVANGER" code="SVG" latitude="58.963729" longitude="5.838538" place="STAVANGER"/>
+<location name="STAVANGER" code="SVG" latitude="58.957445" longitude="5.859904" place="STAVANGER"/>
 <reflevelcode>CD</reflevelcode>
 <data type="observation" unit="cm">
 <waterlevel value="85.1" time="2017-11-09T10:00:00+01:00" flag="obs"/>
