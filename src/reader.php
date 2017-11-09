@@ -122,6 +122,27 @@ function lagreSammensattXML($res) {
     }
        }
 
+       function XMLReader2(){
+        echo("<tbody><tr><th>Vannstand</th><th>Klokka</th></tr>");
+        $url2 = "sammensatt.xml";
+        $sxml2 = simplexml_load_file($url2);
+        if(isset($sxml2->tide[1]->locationdata )){
+            try {
+                foreach ($sxml2->tide[1]->locationdata->data->waterlevel as $data2) {
+                    echo("<tr><td>".$data2["value"]."</td><td>".$data2["time"]."</td></tr>");
+
+                }
+            } catch(Exception $e) {
+                echo("Intet");
+            }
+        }else{
+
+        echo"Ingen data for disse koordinatene";
+            
+    }
+    echo("</tbody");
+       }
+
     function timestamp(){
         $date = new DateTime();
         $res1 = $date->format('Y-m-d');

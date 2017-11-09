@@ -49,15 +49,14 @@
         <p id="title">Vannstand</p>
     </header>
     <div id="left-content">
-    <!--<form method="POST" id="hent" action="oversikt.php">
-        <input type="text" name="lng" id="lng">
-        <input type="text" name="lat" id="lat">
-        <input type="submit" value="Submit">
 
-    </form>-->
 
         <section class="depth-statistics">
             <p class="location"><?php XMLNameReader();?></p>
+            <h1>Siste Observasjonen</h1>
+            <table id="data">
+            <?php XMLReader2();?>
+            </table>
             <table id="data">
                 <tbody>
                     <tr><th>Vannstand</th>
@@ -66,8 +65,10 @@
                     <th>Sjøkartnull</th></tr>
                     <?php XMLReader();?>
                 </tbody>
+                
             </table>
         </section>
+          
 </div>
 
     <div id="right-content">
