@@ -2,10 +2,10 @@
 <vanndata><tide>
 <meta licenseurl="http://kartverket.no/data/lisens/"/>
 <locationlevel unit="cm" reflevel="CD">
-<location name="STAVANGER" code="SVG" latitude="58.870230" longitude="5.752716" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
-<reflevel code="SAFE3" value="266.7" name="Tryggleiksklasse 3" descr="" type="ADM"/>
-<reflevel code="SAFE2" value="258.0" name="Tryggleiksklasse 2" descr="" type="ADM"/>
-<reflevel code="SAFE1" value="244.1" name="Tryggleiksklasse 1" descr="" type="ADM"/>
+<location name="STAVANGER" code="SVG" latitude="58.885668" longitude="5.754776" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
+<reflevel code="SAFE3" value="266.9" name="Tryggleiksklasse 3" descr="" type="ADM"/>
+<reflevel code="SAFE2" value="258.2" name="Tryggleiksklasse 2" descr="" type="ADM"/>
+<reflevel code="SAFE1" value="244.4" name="Tryggleiksklasse 1" descr="" type="ADM"/>
 <reflevel code="1000YMAX" value="188.7" name="H&#xF8;gvatn med 1000 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1000 &#xE5;r. " type="RETURN"/>
 <reflevel code="200YMAX" value="180.0" name="H&#xF8;gvatn med 200 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 200 &#xE5;r. " type="RETURN"/>
 <reflevel code="100YMAX" value="176.1" name="H&#xF8;gvatn med 100 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 100 &#xE5;r. " type="RETURN"/>
