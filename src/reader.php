@@ -1,29 +1,27 @@
 <?php 
- 
- if(isset($_POST)) {
-    var_dump($_POST);
-    //63.9
-    //9.3
-    if(isset($_POST['lat'])) {
+
+//Skrevet av Erlend og Tobias
+
+    if(isset($_POST['lng'])) {
         $lat = $_POST['lat'];
-        $lng = $_POST['lng'];    
-        lagreKilder($lat, $lng);
+        $lng = $_POST['lng'];
+    } else {
+        $lat = 58.87022969976571;
+        $lng = 5.752716064453125;
     }
 
-    $lat = 58.45133;
-    $lng = 5.9997;
-    
+    lagreKilder($lat, $lng);
     $res = genererSammensattXML();
-    echo($res);
     lagreSammensattXML($res);
- }
 
+
+
+    //Henter vannstandsdata og lagrer lokalt
 function lagreKilder($lat, $lng) {
 
-    //Henter og lagrer vannstandsdata
-    $url = "api.sehavniva.no/tideapi.php?lat=".lat."&lon=".lon."&fromtime=".time."T".pastClock+"%3A00&totime="
-    +time+"T"+clock+"%3A00&datatype=all&refcode=cd&place="+place+"&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata;
-    $url = "XML/vannstand.xml";
+    //$url = "api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$time"."T$pastClock%3A00&totime=
+    //$time"."T$clock%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
+    $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
     
     $external = fopen($url, "r");
     $target = fopen("XML/vannstand.xml", "w");
@@ -31,14 +29,14 @@ function lagreKilder($lat, $lng) {
     fwrite($target, $content);
 
     //Henter og lagrer historiske vannstandsdata
-    $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=Egersund&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
-    $url = "XML/historisk.xml";
+    $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
     $external = fopen($url, "r");
     $target = fopen("XML/historisk.xml", "w");
     $content = fread($external, 8192);
     fwrite($target, $content);
 }
 
+    //
 function genererSammensattXML() {
     
     //Append XML-dokumentet sin root-node
@@ -56,35 +54,33 @@ function genererSammensattXML() {
      
 function lagreSammensattXML($res) {
     //åpner fil for skrivning 
-    $fil = fopen("XML/sammensatt.xml", "w");
+    $fil = fopen("sammensatt.xml", "w");
     fwrite($fil, $res);
     fclose($fil);
 }
     
-/*
-    // masse
-    $url = "XML/sammensatt.xml";
-    $sxml = simplexml_load_file($url);
 
-    foreach($sxml->locationlevel->children() as $noe){
-        if($noe["code"] == "LAT"){
-            $value = $noe["value"];
-            
-        }
-        
-    }*/
-    function XMLNameReader(){
+//Skrevet av Gabriel
+    function XMLNameReader()
+    {
         $url = "sammensatt.xml";
         $sxml = simplexml_load_file($url);
-        $i=1;
-        foreach($sxml->tide->locationlevel->location as $data){
-                $sted=$data["name"];
-                $latitude=$data["latitude"];
-                $longitude=$data["longitude"];
-            
+        $i = 1;
+
+        try {
+            foreach ($sxml->tide->locationlevel->location as $data) {
+                $sted = $data["name"];
+                $latitude = $data["latitude"];
+                $longitude = $data["longitude"];
+                echo($sted . "    Koordinater: " . $latitude . " , " . $longitude);
+            }
+
+        } catch (Exception $e) {
+            echo("Intet");
         }
-            echo($sted."    Koordinater: ".$latitude." , ".$longitude);
+
     }
+
     function XMLReader(){
         $url = "sammensatt.xml";
         $sxml = simplexml_load_file($url);
@@ -94,24 +90,28 @@ function lagreSammensattXML($res) {
         $Sjøkartnull="";
         $Normalnull="";
 
-           foreach($sxml->tide->locationlevel->children() as $data){
-               if($data["code"] == "HAT"){
-                   $HAT = $data["value"]; 
-               }
-                if($data["code"] == "MHW"){
-                            $Middelvann = $data["value"]; 
-                        }
-                if($data["code"] == "NN2000"){
-                            $Normalnull = $data["value"]; 
-                        }
-                if($data["code"] == "LAT"){
-                            $LAT = $data["value"]; 
-                        }
-                if($data["code"] == "CD"){
-                            $Sjøkartnull = $data["value"]; 
-                        }    
-            
-                    }
-                    echo('<tr><td>'.$HAT.' cm</td><td>'.$Middelvann.' cm</td><td>'.$Normalnull.' cm</td><td>'.$LAT.' cm</td></tr>');
+        try {
+            foreach ($sxml->tide->locationlevel->children() as $data) {
+                if ($data["code"] == "HAT") {
+                    $HAT = $data["value"];
+                }
+                if ($data["code"] == "MHW") {
+                    $Middelvann = $data["value"];
+                }
+                if ($data["code"] == "NN2000") {
+                    $Normalnull = $data["value"];
+                }
+                if ($data["code"] == "LAT") {
+                    $LAT = $data["value"];
+                }
+                if ($data["code"] == "CD") {
+                    $Sjøkartnull = $data["value"];
+                }
+
+            }
+            echo('<tr><td>' . $HAT . ' cm</td><td>' . $Middelvann . ' cm</td><td>' . $Normalnull . ' cm</td><td>' . $LAT . ' cm</td></tr>');
+        } catch(Exception $e) {
+            echo("Intet");
+        }
        }
 ?>

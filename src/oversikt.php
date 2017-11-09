@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="stylesheet/base.css" type="text/css">
     <link rel="stylesheet" href="stylesheet/map.css" type="text/css">
     <link rel="stylesheet" href="stylesheet/table.css" type="text/css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap&libraries=places"
+            type="text/javascript"></script>
     <script src="js/kart.js" defer></script>
-    <script src="js/table_generation.js" defer></script>
     <script src="js/xml_parser.js" defer></script>
     <meta charset="UTF-8">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDN3r-NshxGsptU4UZ_1h7rwz0FtJWaN0&callback=initMap&libraries=places"
-  type="text/javascript"></script>
+
 
 
 </head>
 <body>
 
     <?php
-    var_dump($_POST);
-    echo
-    ("
+    if(isset($_POST['lng'])) {
+        echo
+        ("
     <form action='oversikt.php' method='post' id='submit'>
     <input type='hidden' id='lat' name='lat' value=".$_POST['lat'].">
     <input type='hidden' id='lng' name='lng' value=".$_POST['lng'].">
     </form>
     "
-    );
+        );
+    } else {
+        echo
+        ("
+    <form action='oversikt.php' method='post' id='submit'>
+    <input type='hidden' id='lat' name='lat' value='58.87022969976571'>
+    <input type='hidden' id='lng' name='lng' value='5.752716064453125''>
+    </form>
+    "
+        );
+    }
+
     
     ?>
 
@@ -55,11 +66,11 @@
                 </tbody>
             </table>
         </section>
-        <button onclick="alert(readResponse())">Click me</button>
 </div>
+
     <div id="right-content">
-    <div id="map"></div>
-    
+        <div id="map"></div>
+
     </div>
 
 </body>
