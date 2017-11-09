@@ -23,20 +23,22 @@ function lagreKilder($lat, $lng) {
     $clockP = clockPast();
 
     $url = "http://api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$date"."T$clockP%3A00&totime=$date"."T$clockN%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
-    //$url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
-    $external = fopen($url, "r");
+    //$external = fopen($url, "r");
+    //echo($url);
     $target = fopen("XML/vannstand.xml", "w");
-    $content = fread($external, 8192);
+    $content = file_get_contents($url);
     fwrite($target, $content);
-    fclose($external);
+    //fclose($external);
 
     //Henter og lagrer historiske vannstandsdata
     $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
-    $external = fopen($url, "r");
+    //$external = fopen($url, "r");
     $target = fopen("XML/historisk.xml", "w");
-    $content = fread($external, 8192);
+    $content = file_get_contents($url);
     fwrite($target, $content);
-    fclose($external);
+
+    
+    //fclose($external);
 }
 
     //
@@ -51,7 +53,16 @@ function genererSammensattXML() {
     
     $xslt = new XSLTProcessor();
     $xslt->importStyleSheet($xsldoc);
-    return $xslt->transformToXML($output);
+    
+    try {
+        return $xslt->transformToXML($output);
+    } catch (Exception $e) {
+        echo("Prøv igjen");
+        return null;
+    }
+
+    $external = fopen("XML/historisk.xml", "w");
+    fwrite($external, "");
 }
 
      
@@ -97,7 +108,7 @@ function lagreSammensattXML($res) {
                     if ($data["code"] == "HAT") {
                         $HAT = $data["value"];
                     }
-                    if ($data["code"] == "MHW") {
+                    if ($data["code"] == "MSL") {
                         $Middelvann = $data["value"];
                     }
                     if ($data["code"] == "NN2000") {
