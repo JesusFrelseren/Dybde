@@ -123,13 +123,9 @@ function lagreSammensattXML($res) {
        }
 
     function timestamp(){
-        $dateString = "2017-09-11";
-        $myDate = new DateTime($dateString);
-        $formattedDate = $myDate->format('d M Y');
-        echo $formatteDate;
-        //$date = new DateTime();
-        //echo $date->format('Y-m-d');
-        //return $date;
+        $date = new DateTime();
+        echo $date->format('Y-m-d');
+        return $date;
        
     }
     function clockNow(){

@@ -2,7 +2,6 @@
 <vanndata><tide>
 <meta licenseurl="http://kartverket.no/data/lisens/"/>
 <locationlevel unit="cm" reflevel="CD">
-<<<<<<< HEAD
 <location name="STAVANGER" code="SVG" latitude="58.870230" longitude="5.752716" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
 <reflevel code="SAFE3" value="266.7" name="Tryggleiksklasse 3" descr="" type="ADM"/>
 <reflevel code="SAFE2" value="258.0" name="Tryggleiksklasse 2" descr="" type="ADM"/>
@@ -57,7 +56,6 @@
 <reflevel code="CD" value="0.0" name="Sj&#xF8;kartnull" descr="Nullniv&#xE5; for djupner i sj&#xF8;karta og h&#xF8;gder i tidvatntabellen" type="REF"/>
 <reflevel code="5YMIN" value="-3.6" name="L&#xE5;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
 <reflevel code="20YMIN" value="-10.0" name="L&#xE5;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 20 &#xE5;r." type="RETURN"/>
-=======
 <location name="BERGEN" code="BGO" latitude="60.217024" longitude="5.358284" delay="-15" factor="0.85" obsname="BERGEN" obscode="BGO" landlift="0.16"/>
 <reflevel code="SAFE3" value="283.5" name="Tryggleiksklasse 3" descr="" type="ADM"/>
 <reflevel code="SAFE2" value="276.1" name="Tryggleiksklasse 2" descr="" type="ADM"/>
@@ -82,6 +80,5 @@
 <reflevel code="1YMIN" value="-12.6" name="L&#xE5;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 1 &#xE5;r. " type="RETURN"/>
 <reflevel code="5YMIN" value="-20.7" name="L&#xE5;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
 <reflevel code="20YMIN" value="-27.2" name="L&#xE5;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 20 &#xE5;r." type="RETURN"/>
->>>>>>> 057299c024f62ab7931bade8cd2f999988d358a2
 </locationlevel>
 </tide></vanndata>
