@@ -9,18 +9,21 @@
         $lat = 58.87022969976571;
         $lng = 5.752716064453125;
     }
-
     lagreKilder($lat, $lng);
     $res = genererSammensattXML();
     lagreSammensattXML($res);
 
 
 
+
     //Henter vannstandsdata og lagrer lokalt
 function lagreKilder($lat, $lng) {
+    $date = timestamp();
+    $clockN = clockNow();
+    $clockP = clockPast();
 
-    //$url = "api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$time"."T$pastClock%3A00&totime=
-    //$time"."T$clock%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
+    $url = "api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$date"."T$clockP%3A00&totime=
+    $date"."T$clockN%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
     $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
     
     $external = fopen($url, "r");
@@ -116,16 +119,24 @@ function lagreSammensattXML($res) {
        }
 
     function timestamp(){
-        $date = new DateTime();
-        echo($date->format("Y-m-d"));
+        $dateString = "2017-09-11";
+        $myDate = new DateTime($dateString);
+        $formattedDate = $myDate->format('d M Y');
+        echo $formatteDate;
+        //$date = new DateTime();
+        //echo $date->format('Y-m-d');
+        //return $date;
+       
     }
     function clockNow(){
         $clockN = new DateTime();
         echo($clockN->format("H"));
+        return $clockN;
     }
     function clockPast(){
         $clockP = new DateTime();
         $clockP->modify('-3 hours');
         echo($clockP->format("H"));
+        return $clockP;
     }
 ?>
