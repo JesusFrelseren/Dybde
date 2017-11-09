@@ -53,10 +53,12 @@
 
         <section class="depth-statistics">
             <p class="location"><?php XMLNameReader();?></p>
+            <h1>Predictions</h1>
+            <?php XMLReader3();?>
             <h1>Siste Observasjonen</h1>
             <table id="data">
             <?php XMLReader2();?>
-            </table>
+            <h1>Historsik data</h1>
             <table id="data">
                 <tbody>
                     <tr><th>HAT</th>
@@ -64,9 +66,6 @@
                     <th>Normalnull</th>
                     <th>LAT/Sjøkartnull</th></tr>
                     <?php XMLReader();?>
-                </tbody>
-                
-            </table>
         </section>
           
 </div>

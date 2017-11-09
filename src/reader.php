@@ -102,7 +102,7 @@ function lagreSammensattXML($res) {
         $Middelvann="";
         $Sjøkartnull="";
         $Normalnull="";
-        if(isset($sxml->tide->locationlevel )){
+        if(isset($sxml->tide->locationlevel->reflevel )){
             try {
                 foreach ($sxml->tide->locationlevel->children() as $data) {
                     if ($data["code"] == "HAT") {
@@ -123,36 +123,78 @@ function lagreSammensattXML($res) {
 
                 }
                 echo('<tr><td>' . $HAT . ' cm</td><td>' . $Middelvann . ' cm</td><td>' . $Normalnull . ' cm</td><td>' . $LAT . ' cm</td></tr>');
+                echo("</tbody>");
+                echo("</table>");
             } catch(Exception $e) {
                 echo("Intet");
             }
         }else{
-
-        echo"Ingen data for disse koordinatene";
-            
+            echo("</tbody>");
+            echo("</table>");
+            echo"Ingen data for disse koordinatene";
+        
+        
+    
     }
        }
 
-       function XMLReader2(){
+    function XMLReader2(){
         echo("<tbody><tr><th>Vannstand</th><th>Klokka</th></tr>");
         $url2 = "sammensatt.xml";
         $sxml2 = simplexml_load_file($url2);
-        if(isset($sxml2->tide[1]->locationdata )){
+        if(isset($sxml2->tide[1]->locationdata->data->waterlevel )){
+            if($sxml2->tide[1]->locationdata->data["type"]=="observation"){
+
             try {
                 foreach ($sxml2->tide[1]->locationdata->data->waterlevel as $data2) {
-                    echo("<tr><td>".$data2["value"]."</td><td>".$data2["time"]."</td></tr>");
+                    echo("<tr><td>".$data2["value"]." cm</td><td> Dato: ".substr($data2["time"],0,10)." Tid: ".substr($data2["time"],11,18)."</td></tr>");
 
                 }
-            } catch(Exception $e) {
-                echo("Intet");
-            }
+                } catch(Exception $e) {
+                    echo("Intet");
+                }
+            }else{
+            echo("</table>");
+            echo"Ingen data for disse koordinatene";
+            
+        }
         }else{
-
-        echo"Ingen data for disse koordinatene";
+            echo("</table>");
+            echo"Ingen data for disse koordinatene";
             
     }
-    echo("</tbody");
-       }
+    echo("</table>");
+    echo("</tbody>");
+    }
+    function XMLReader3(){
+        echo("<table id='data'>");
+        echo("<tbody><tr><th>Vannstand</th><th>Klokka</th></tr>");
+        $url3 = "sammensatt.xml";
+        $sxml3 = simplexml_load_file($url3);
+        if(isset($sxml3->tide[1]->locationdata->data->waterlevel )){
+            if($sxml3->tide[1]->locationdata->data[1]["type"]=="prediction"){
+
+            try {
+                foreach ($sxml3->tide[1]->locationdata->data[1]->waterlevel as $data2) {
+                    echo("<tr><td>".$data2["value"]." cm</td><td> Dato: ".substr($data2["time"],0,10)." Tid: ".substr($data2["time"],11,18)."</td></tr>");
+
+                }
+                } catch(Exception $e) {
+                    echo("Intet");
+                }
+            }else{
+            echo("</table>");
+            echo"Ingen data for disse koordinatene";
+            
+        }
+        }else{
+            echo("</table>");
+            echo"Ingen data for disse koordinatene";
+            
+    }
+    echo("</table>");
+    echo("</tbody>");
+    }
 
     function timestamp(){
         $date = new DateTime();

@@ -2,7 +2,7 @@
 <vanndata><tide>
 <meta licenseurl="http://kartverket.no/data/lisens/"/>
 <locationlevel unit="cm" reflevel="CD">
-<location name="STAVANGER" code="SVG" latitude="58.957445" longitude="5.859904" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
+<location name="STAVANGER" code="SVG" latitude="58.870230" longitude="5.752716" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.14"/>
 <reflevel code="SAFE3" value="266.7" name="Tryggleiksklasse 3" descr="" type="ADM"/>
 <reflevel code="SAFE2" value="258.0" name="Tryggleiksklasse 2" descr="" type="ADM"/>
 <reflevel code="SAFE1" value="244.1" name="Tryggleiksklasse 1" descr="" type="ADM"/>
@@ -15,7 +15,7 @@
 <reflevel code="HAT" value="111.4" name="H&#xF8;gaste astronomiske tidvatn" descr="H&#xF8;yeste mulige vannstand uten v&#xE6;rets virkning " type="ASTROREF"/>
 <reflevel code="MHWS" value="88.3" name="Middel spring h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
 <reflevel code="MHW" value="81.2" name="Middel h&#xF8;gvatn" descr="Gjennomsnittet av alle observerte h&#xF8;gvatn i ein periode p&#xE5; 19 &#xE5;r. " type="ASTROREF"/>
-<reflevel code="NN2000" value="74.3" name="Normalnull 2000" descr="Nullniv&#xE5; i det norske offisielle h&#xF8;gdesystemet NN2000" type="REF"/>
+<reflevel code="NN2000" value="74.4" name="Normalnull 2000" descr="Nullniv&#xE5; i det norske offisielle h&#xF8;gdesystemet NN2000" type="REF"/>
 <reflevel code="MHWN" value="74.1" name="Middel nipp h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
 <reflevel code="NN1954" value="66.8" name="Normalnull 1954" descr="Nullniv&#xE5; i det norske nasjonale h&#xF8;gdesystemet fr&#xE5; 1954" type="REF"/>
 <reflevel code="MSL" value="65.3" epoch="1996-2014" name="Middelvatn (1996-2014)" descr="Gjennomsnittleg h&#xF8;gde av sj&#xF8;overflata p&#xE5; ein stad over ein periode p&#xE5; 19 &#xE5;r" type="REF"/>
@@ -31,36 +31,20 @@
 </tide><tide>
 <service cominfo="Vi har problem med innsamling av data fr&#xE5; m&#xE5;lestasjonane, men reknar med at det skal vera i orden i l&#xF8;pet av dagen."/>
 <locationdata>
-<location name="STAVANGER" code="SVG" latitude="58.957445" longitude="5.859904" place="STAVANGER"/>
+<location name="STAVANGER" code="SVG" latitude="58.870230" longitude="5.752716" place="STAVANGER"/>
 <reflevelcode>CD</reflevelcode>
 <data type="observation" unit="cm">
-<waterlevel value="85.1" time="2017-11-09T10:00:00+01:00" flag="obs"/>
-<waterlevel value="85.3" time="2017-11-09T10:10:00+01:00" flag="obs"/>
-<waterlevel value="85.5" time="2017-11-09T10:20:00+01:00" flag="obs"/>
-<waterlevel value="87.8" time="2017-11-09T10:30:00+01:00" flag="obs"/>
-<waterlevel value="86.4" time="2017-11-09T10:40:00+01:00" flag="obs"/>
-<waterlevel value="86.7" time="2017-11-09T10:50:00+01:00" flag="obs"/>
-<waterlevel value="85.4" time="2017-11-09T11:00:00+01:00" flag="obs"/>
-<waterlevel value="83.9" time="2017-11-09T11:10:00+01:00" flag="obs"/>
-<waterlevel value="84.3" time="2017-11-09T11:20:00+01:00" flag="obs"/>
-<waterlevel value="84.2" time="2017-11-09T11:30:00+01:00" flag="obs"/>
-<waterlevel value="84.8" time="2017-11-09T11:40:00+01:00" flag="obs"/>
-<waterlevel value="86.4" time="2017-11-09T11:50:00+01:00" flag="obs"/>
 <waterlevel value="87.3" time="2017-11-09T12:00:00+01:00" flag="obs"/>
+<waterlevel value="88.5" time="2017-11-09T12:10:00+01:00" flag="obs"/>
+<waterlevel value="90.3" time="2017-11-09T12:20:00+01:00" flag="obs"/>
+<waterlevel value="93.0" time="2017-11-09T12:30:00+01:00" flag="obs"/>
+<waterlevel value="95.6" time="2017-11-09T12:40:00+01:00" flag="obs"/>
+<waterlevel value="98.2" time="2017-11-09T12:50:00+01:00" flag="obs"/>
+<waterlevel value="101.2" time="2017-11-09T13:00:00+01:00" flag="obs"/>
+<waterlevel value="102.6" time="2017-11-09T13:10:00+01:00" flag="obs"/>
+<waterlevel value="105.8" time="2017-11-09T13:20:00+01:00" flag="obs"/>
 </data>
 <data type="prediction" unit="cm">
-<waterlevel value="73.7" time="2017-11-09T10:00:00+01:00" flag="pre"/>
-<waterlevel value="74.2" time="2017-11-09T10:10:00+01:00" flag="pre"/>
-<waterlevel value="74.6" time="2017-11-09T10:20:00+01:00" flag="pre"/>
-<waterlevel value="74.7" time="2017-11-09T10:30:00+01:00" flag="pre"/>
-<waterlevel value="74.7" time="2017-11-09T10:40:00+01:00" flag="pre"/>
-<waterlevel value="74.7" time="2017-11-09T10:50:00+01:00" flag="pre"/>
-<waterlevel value="74.8" time="2017-11-09T11:00:00+01:00" flag="pre"/>
-<waterlevel value="74.9" time="2017-11-09T11:10:00+01:00" flag="pre"/>
-<waterlevel value="75.1" time="2017-11-09T11:20:00+01:00" flag="pre"/>
-<waterlevel value="75.6" time="2017-11-09T11:30:00+01:00" flag="pre"/>
-<waterlevel value="76.3" time="2017-11-09T11:40:00+01:00" flag="pre"/>
-<waterlevel value="77.3" time="2017-11-09T11:50:00+01:00" flag="pre"/>
 <waterlevel value="78.6" time="2017-11-09T12:00:00+01:00" flag="pre"/>
 <waterlevel value="80.1" time="2017-11-09T12:10:00+01:00" flag="pre"/>
 <waterlevel value="81.9" time="2017-11-09T12:20:00+01:00" flag="pre"/>
@@ -68,42 +52,50 @@
 <waterlevel value="86.1" time="2017-11-09T12:40:00+01:00" flag="pre"/>
 <waterlevel value="88.3" time="2017-11-09T12:50:00+01:00" flag="pre"/>
 <waterlevel value="90.4" time="2017-11-09T13:00:00+01:00" flag="pre"/>
+<waterlevel value="92.5" time="2017-11-09T13:10:00+01:00" flag="pre"/>
+<waterlevel value="94.3" time="2017-11-09T13:20:00+01:00" flag="pre"/>
+<waterlevel value="95.9" time="2017-11-09T13:30:00+01:00" flag="pre"/>
+<waterlevel value="97.2" time="2017-11-09T13:40:00+01:00" flag="pre"/>
+<waterlevel value="98.0" time="2017-11-09T13:50:00+01:00" flag="pre"/>
+<waterlevel value="98.4" time="2017-11-09T14:00:00+01:00" flag="pre"/>
+<waterlevel value="98.4" time="2017-11-09T14:10:00+01:00" flag="pre"/>
+<waterlevel value="97.9" time="2017-11-09T14:20:00+01:00" flag="pre"/>
+<waterlevel value="97.1" time="2017-11-09T14:30:00+01:00" flag="pre"/>
+<waterlevel value="95.9" time="2017-11-09T14:40:00+01:00" flag="pre"/>
+<waterlevel value="94.5" time="2017-11-09T14:50:00+01:00" flag="pre"/>
+<waterlevel value="92.9" time="2017-11-09T15:00:00+01:00" flag="pre"/>
 </data>
 <data type="weathereffect" unit="cm">
-<waterlevel value="11.3" time="2017-11-09T10:00:00+01:00"/>
-<waterlevel value="11.1" time="2017-11-09T10:10:00+01:00"/>
-<waterlevel value="10.9" time="2017-11-09T10:20:00+01:00"/>
-<waterlevel value="13.1" time="2017-11-09T10:30:00+01:00"/>
-<waterlevel value="11.7" time="2017-11-09T10:40:00+01:00"/>
-<waterlevel value="12.0" time="2017-11-09T10:50:00+01:00"/>
-<waterlevel value="10.7" time="2017-11-09T11:00:00+01:00"/>
-<waterlevel value="9.1" time="2017-11-09T11:10:00+01:00"/>
-<waterlevel value="9.1" time="2017-11-09T11:20:00+01:00"/>
-<waterlevel value="8.6" time="2017-11-09T11:30:00+01:00"/>
-<waterlevel value="8.4" time="2017-11-09T11:40:00+01:00"/>
-<waterlevel value="9.1" time="2017-11-09T11:50:00+01:00"/>
 <waterlevel value="8.7" time="2017-11-09T12:00:00+01:00"/>
 <waterlevel value="8.4" time="2017-11-09T12:10:00+01:00"/>
+<waterlevel value="8.3" time="2017-11-09T12:20:00+01:00"/>
+<waterlevel value="9.0" time="2017-11-09T12:30:00+01:00"/>
+<waterlevel value="9.5" time="2017-11-09T12:40:00+01:00"/>
+<waterlevel value="9.9" time="2017-11-09T12:50:00+01:00"/>
+<waterlevel value="10.8" time="2017-11-09T13:00:00+01:00"/>
+<waterlevel value="10.1" time="2017-11-09T13:10:00+01:00"/>
+<waterlevel value="11.5" time="2017-11-09T13:20:00+01:00"/>
+<waterlevel value="13.0" time="2017-11-09T13:30:00+01:00"/>
 </data>
 <data type="forecast" unit="cm">
-<waterlevel value="76.7" time="2017-11-09T10:00:00+01:00" flag="forecast"/>
-<waterlevel value="77.4" time="2017-11-09T10:10:00+01:00" flag="forecast"/>
-<waterlevel value="77.9" time="2017-11-09T10:20:00+01:00" flag="forecast"/>
-<waterlevel value="78.2" time="2017-11-09T10:30:00+01:00" flag="forecast"/>
-<waterlevel value="78.4" time="2017-11-09T10:40:00+01:00" flag="forecast"/>
-<waterlevel value="78.6" time="2017-11-09T10:50:00+01:00" flag="forecast"/>
-<waterlevel value="78.8" time="2017-11-09T11:00:00+01:00" flag="forecast"/>
-<waterlevel value="78.9" time="2017-11-09T11:10:00+01:00" flag="forecast"/>
-<waterlevel value="79.1" time="2017-11-09T11:20:00+01:00" flag="forecast"/>
-<waterlevel value="79.6" time="2017-11-09T11:30:00+01:00" flag="forecast"/>
-<waterlevel value="80.3" time="2017-11-09T11:40:00+01:00" flag="forecast"/>
-<waterlevel value="81.3" time="2017-11-09T11:50:00+01:00" flag="forecast"/>
 <waterlevel value="82.6" time="2017-11-09T12:00:00+01:00" flag="forecast"/>
 <waterlevel value="84.1" time="2017-11-09T12:10:00+01:00" flag="forecast"/>
 <waterlevel value="85.9" time="2017-11-09T12:20:00+01:00" flag="forecast"/>
 <waterlevel value="87.9" time="2017-11-09T12:30:00+01:00" flag="forecast"/>
 <waterlevel value="90.1" time="2017-11-09T12:40:00+01:00" flag="forecast"/>
 <waterlevel value="92.3" time="2017-11-09T12:50:00+01:00" flag="forecast"/>
+<waterlevel value="94.4" time="2017-11-09T13:00:00+01:00" flag="forecast"/>
+<waterlevel value="96.3" time="2017-11-09T13:10:00+01:00" flag="forecast"/>
+<waterlevel value="98.0" time="2017-11-09T13:20:00+01:00" flag="forecast"/>
+<waterlevel value="99.4" time="2017-11-09T13:30:00+01:00" flag="forecast"/>
+<waterlevel value="100.5" time="2017-11-09T13:40:00+01:00" flag="forecast"/>
+<waterlevel value="101.2" time="2017-11-09T13:50:00+01:00" flag="forecast"/>
+<waterlevel value="101.4" time="2017-11-09T14:00:00+01:00" flag="forecast"/>
+<waterlevel value="100.7" time="2017-11-09T14:10:00+01:00" flag="forecast"/>
+<waterlevel value="99.6" time="2017-11-09T14:20:00+01:00" flag="forecast"/>
+<waterlevel value="98.1" time="2017-11-09T14:30:00+01:00" flag="forecast"/>
+<waterlevel value="96.3" time="2017-11-09T14:40:00+01:00" flag="forecast"/>
+<waterlevel value="94.2" time="2017-11-09T14:50:00+01:00" flag="forecast"/>
 </data>
 </locationdata>
 </tide></vanndata>
