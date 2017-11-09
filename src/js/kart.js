@@ -40,7 +40,8 @@ function initMap() {
   function placeMarker(position, map, markers) {
       var marker = new google.maps.Marker({
           position: position,
-          map: map
+          map: map,
+          zoom: map.getZoom()
       });
 
       document.getElementById('lat').value = marker.getPosition().lat();
