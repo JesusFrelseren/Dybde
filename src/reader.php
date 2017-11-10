@@ -84,7 +84,8 @@ function lagreSammensattXML($res) {
                 }
             }
     }
-
+    //skrevet ab Gabriel og Robert
+    //henter historisk data og legger det inn i tabellen.
     function XMLReader(){
         $url = "sammensatt.xml";
         $sxml = simplexml_load_file($url);
@@ -124,7 +125,8 @@ function lagreSammensattXML($res) {
                 echo"Ingen data for disse koordinatene";
             }
        }
-
+    //skrevet av Gabriel
+    //Lager en tabell og henter data fra observasjons dataen fra xml dokumentet.
     function XMLReader2(){
         echo("<tbody><tr><th>Vannstand</th><th>Klokka</th></tr>");
         $url2 = "sammensatt.xml";
