@@ -12,12 +12,8 @@
     <script src="js/kart.js" defer></script>
     <script src="js/xml_parser.js" defer></script>
     <meta charset="UTF-8">
-
-
-
 </head>
 <body>
-
     <?php
     if(isset($_POST['lng'])) {
         echo
@@ -39,21 +35,14 @@
     </form>
     "
         );
-    }
-
-    
-    ?>
-
-    
+    } 
+    ?> 
     <header>
         <p id="title">Vannstand</p>
     </header>
     <div id="left-content">
-
-
         <section class="depth-statistics">
             <p class="location"><?php XMLNameReader();?></p>
-          
             <h1>Siste Observasjoner</h1>
             <table id="data">
             <?php XMLReader2();?>
@@ -65,15 +54,11 @@
                     <th>Normalnull</th>
                     <th>LAT/Sjøkartnull</th></tr>
                     <?php XMLReader();?>
-        </section>
-          
+        </section>      
 </div>
-
     <div id="right-content">
         <div id="map"></div>
-
     </div>
-
 </body>
 </html>
 
