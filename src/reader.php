@@ -98,11 +98,7 @@ function lagreSammensattXML($res) {
     function XMLReader(){
         $url = "sammensatt.xml";
         $sxml = simplexml_load_file($url);
-        $LAT="";
-        $HAT="";
-        $Middelvann="";
-        $Sjøkartnull="";
-        $Normalnull="";
+
         if(isset($sxml->tide->locationlevel->reflevel )){
             try {
                 foreach ($sxml->tide->locationlevel->children() as $data) {
