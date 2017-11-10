@@ -147,7 +147,9 @@ function lagreSammensattXML($res) {
 
             try {
                 foreach ($sxml2->tide[1]->locationdata->data->waterlevel as $data2) {
-                    echo("<tr><td>".$data2["value"]." cm</td><td> Dato: ".substr($data2["time"],0,10)." Tid: ".substr($data2["time"],11,18)."</td></tr>");
+                    $date = date_create($data2["time"]);
+                    $dateFormatted = date_format($date, 'H:i');
+                    echo("<tr><td>".$data2["value"]." cm</td><td>".$dateFormatted."</td></tr>");
 
                 }
                 } catch(Exception $e) {
