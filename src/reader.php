@@ -22,7 +22,8 @@ function lagreKilder($lat, $lng) {
     $clockN = clockNow();
     $clockP = clockPast();
 
-    $url = "http://api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$date"."T$clockP%3A00&totime=$date"."T$clockN%3A00&datatype=all&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
+    $url = "http://api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$date"."T$clockP%3A00&totime=$date"."T$clockN%3A00&datatype=obs&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
+    echo $url;
     //$external = fopen($url, "r");
     //echo($url);
     $target = fopen("XML/vannstand.xml", "w");
@@ -207,6 +208,7 @@ function lagreSammensattXML($res) {
     }
     function clockNow(){
         $clockN = new DateTime();
+        $clockN->modify('+3 hours');
         $res2 = $clockN->format("H");
         return $res2;
     }
