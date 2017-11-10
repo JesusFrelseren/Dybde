@@ -57,6 +57,7 @@
         </section>      
 </div>
     <div id="right-content">
+    <!--Google Maps kommer her -->
         <div id="map"></div>
     </div>
 </body>

@@ -1,7 +1,8 @@
-// Google Maps API, skreddersydd av Erlend
+
 
 var map;
 
+//Skrevet av Google
 function initMap() {
 
     var lat = document.getElementById('lat').value;
@@ -22,7 +23,8 @@ function initMap() {
       map: map
     });
 
-
+    
+    //Skrevet av Erlend
     google.maps.event.addListener(map, 'click', function(e) {
         placeMarker(e.latLng, map);
         var form = document.getElementById('submit');

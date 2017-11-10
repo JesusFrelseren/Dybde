@@ -19,6 +19,7 @@ function lagreKilder($lat, $lng) {
     $clockN = clockNow();
     $clockP = clockPast();
 
+    //Kilde til vannstandsdata
     $url = "http://api.sehavniva.no/tideapi.php?lat=$lat&lon=$lng&fromtime=$date"."T$clockP%3A00&totime=$date"."T$clockN%3A00&datatype=obs&refcode=cd&place=&file=&lang=nn&interval=10&dst=0&tzone=&tide_request=locationdata";
     
     $target = fopen("XML/vannstand.xml", "w");
@@ -26,7 +27,7 @@ function lagreKilder($lat, $lng) {
     fwrite($target, $content);
     fclose($target);
 
-    //Henter og lagrer historiske vannstandsdata
+    //Kilde til historiske vannstandsdata
     $url = "http://api.sehavniva.no/tideapi.php?tide_request=locationlevels&lang=en%20&lat=$lat&lon=$lng&place=&refcode=cd&file=xml&flag=adm%2Castro%2Creturn";
 
     $target = fopen("XML/historisk.xml", "w");
@@ -35,9 +36,11 @@ function lagreKilder($lat, $lng) {
     fclose($target);
 }
  
+//Lager sammensatt.xml (se merge.xsl)
 function genererSammensattXML() {
     
-    //Append XML-dokumentet sin root-node
+
+    //vanndata.xml er template-filen for merge.xsl
     $output = new DOMDocument();
     $output->load("XML/vanndata.xml");
     
