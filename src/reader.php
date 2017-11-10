@@ -87,7 +87,7 @@ function lagreSammensattXML($res) {
                 }
             }
     }
-    //skrevet ab Gabriel og Robert
+    //skrevet av Gabriel og Robert
     //henter historisk data og legger det inn i tabellen.
     function XMLReader(){
         $url = "sammensatt.xml";
