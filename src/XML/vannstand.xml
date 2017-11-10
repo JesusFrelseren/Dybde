@@ -1,26 +1,24 @@
 <tide>
 <locationdata>
-<location name="ÅLESUND" code="AES" latitude="62.336701" longitude="5.816093" place="ÅLESUND"/>
+<location name="ÅLESUND" code="AES" latitude="62.180887" longitude="5.687073" delay="-5" factor="0.99"/>
 <reflevelcode>CD</reflevelcode>
 <data type="observation" unit="cm">
-<waterlevel value="123.1" time="2017-11-10T08:00:00+01:00" flag="obs"/>
-<waterlevel value="120.0" time="2017-11-10T08:10:00+01:00" flag="obs"/>
-<waterlevel value="117.8" time="2017-11-10T08:20:00+01:00" flag="obs"/>
-<waterlevel value="117.3" time="2017-11-10T08:30:00+01:00" flag="obs"/>
-<waterlevel value="116.0" time="2017-11-10T08:40:00+01:00" flag="obs"/>
-<waterlevel value="114.6" time="2017-11-10T08:50:00+01:00" flag="obs"/>
-<waterlevel value="112.5" time="2017-11-10T09:00:00+01:00" flag="obs"/>
-<waterlevel value="112.3" time="2017-11-10T09:10:00+01:00" flag="obs"/>
-<waterlevel value="110.4" time="2017-11-10T09:20:00+01:00" flag="obs"/>
-<waterlevel value="111.2" time="2017-11-10T09:30:00+01:00" flag="obs"/>
-<waterlevel value="111.2" time="2017-11-10T09:40:00+01:00" flag="obs"/>
-<waterlevel value="110.6" time="2017-11-10T09:50:00+01:00" flag="obs"/>
-<waterlevel value="110.4" time="2017-11-10T10:00:00+01:00" flag="obs"/>
-<waterlevel value="109.3" time="2017-11-10T10:10:00+01:00" flag="obs"/>
-<waterlevel value="110.5" time="2017-11-10T10:20:00+01:00" flag="obs"/>
+<waterlevel value="111.0" time="2017-11-10T09:00:00+01:00" flag="obs"/>
+<waterlevel value="111.0" time="2017-11-10T09:10:00+01:00" flag="obs"/>
+<waterlevel value="109.3" time="2017-11-10T09:20:00+01:00" flag="obs"/>
+<waterlevel value="110.2" time="2017-11-10T09:30:00+01:00" flag="obs"/>
+<waterlevel value="110.5" time="2017-11-10T09:40:00+01:00" flag="obs"/>
+<waterlevel value="109.9" time="2017-11-10T09:50:00+01:00" flag="obs"/>
+<waterlevel value="110.0" time="2017-11-10T10:00:00+01:00" flag="obs"/>
+<waterlevel value="109.0" time="2017-11-10T10:10:00+01:00" flag="obs"/>
+<waterlevel value="110.4" time="2017-11-10T10:20:00+01:00" flag="obs"/>
 <waterlevel value="111.7" time="2017-11-10T10:30:00+01:00" flag="obs"/>
-<waterlevel value="114.1" time="2017-11-10T10:40:00+01:00" flag="obs"/>
-<waterlevel value="115.1" time="2017-11-10T10:50:00+01:00" flag="obs"/>
+<waterlevel value="114.3" time="2017-11-10T10:40:00+01:00" flag="obs"/>
+<waterlevel value="115.5" time="2017-11-10T10:50:00+01:00" flag="obs"/>
+<waterlevel value="119.0" time="2017-11-10T11:00:00+01:00" flag="obs"/>
+<waterlevel value="121.3" time="2017-11-10T11:10:00+01:00" flag="obs"/>
+<waterlevel value="126.2" time="2017-11-10T11:20:00+01:00" flag="obs"/>
+<waterlevel value="130.2" time="2017-11-10T11:30:00+01:00" flag="obs"/>
 </data>
 </locationdata>
 </tide>

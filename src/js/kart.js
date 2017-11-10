@@ -11,10 +11,12 @@ function initMap() {
     var position = {lat: parseFloat(lat), lng: parseFloat(lng)};
 
     map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
+      zoom: 10,
       center: position,
       fullscreenControl: false,
-      streetViewControl: false
+      streetViewControl: false,
+      draggingCursor: "pointer",
+      cursor: "pointer"
     });
 
 
