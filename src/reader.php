@@ -166,7 +166,9 @@ function lagreSammensattXML($res) {
     echo("</table>");
     echo("</tbody>");
     }
-    function XMLReader3(){
+    
+    
+    /*function XMLReader3(){
         echo("<table id='data'>");
         echo("<tbody><tr><th>Vannstand</th><th>Klokka</th></tr>");
         $url3 = "sammensatt.xml";
@@ -194,7 +196,7 @@ function lagreSammensattXML($res) {
     }
     echo("</table>");
     echo("</tbody>");
-    }
+    } */
 
     function timestamp(){
         $date = new DateTime();
