@@ -4,7 +4,7 @@
 
     if(isset($_POST['lng'])) {
         $lat = $_POST['lat'];
-        $lng = $_POST['lng'];
+        $lng = $_POST['lng']; 
     } else {
         $lat = 58.87022969976571;
         $lng = 5.752716064453125;
