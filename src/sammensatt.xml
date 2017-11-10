@@ -2,115 +2,55 @@
 <vanndata><tide>
 <meta licenseurl="http://kartverket.no/data/lisens/"/>
 <locationlevel unit="cm" reflevel="CD">
-<location name="STAVANGER" code="SVG" latitude="58.872981" longitude="5.747123" delay="0" factor="1.00" obsname="STAVANGER" obscode="SVG" landlift="0.13"/>
-<reflevel code="SAFE3" value="266.7" name="Tryggleiksklasse 3" descr="" type="ADM"/>
-<reflevel code="SAFE2" value="258.0" name="Tryggleiksklasse 2" descr="" type="ADM"/>
-<reflevel code="SAFE1" value="244.1" name="Tryggleiksklasse 1" descr="" type="ADM"/>
-<reflevel code="1000YMAX" value="188.7" name="H&#xF8;gvatn med 1000 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1000 &#xE5;r. " type="RETURN"/>
-<reflevel code="200YMAX" value="180.0" name="H&#xF8;gvatn med 200 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 200 &#xE5;r. " type="RETURN"/>
-<reflevel code="100YMAX" value="176.1" name="H&#xF8;gvatn med 100 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 100 &#xE5;r. " type="RETURN"/>
-<reflevel code="20YMAX" value="166.2" name="H&#xF8;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 20 &#xE5;r. " type="RETURN"/>
-<reflevel code="5YMAX" value="156.3" name="H&#xF8;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
-<reflevel code="1YMAX" value="144.9" name="H&#xF8;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1 &#xE5;r." type="RETURN"/>
-<reflevel code="HAT" value="111.4" name="H&#xF8;gaste astronomiske tidvatn" descr="H&#xF8;yeste mulige vannstand uten v&#xE6;rets virkning " type="ASTROREF"/>
-<reflevel code="MHWS" value="88.3" name="Middel spring h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
-<reflevel code="MHW" value="81.2" name="Middel h&#xF8;gvatn" descr="Gjennomsnittet av alle observerte h&#xF8;gvatn i ein periode p&#xE5; 19 &#xE5;r. " type="ASTROREF"/>
-<reflevel code="NN2000" value="74.4" name="Normalnull 2000" descr="Nullniv&#xE5; i det norske offisielle h&#xF8;gdesystemet NN2000" type="REF"/>
-<reflevel code="MHWN" value="74.1" name="Middel nipp h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
-<reflevel code="NN1954" value="66.8" name="Normalnull 1954" descr="Nullniv&#xE5; i det norske nasjonale h&#xF8;gdesystemet fr&#xE5; 1954" type="REF"/>
-<reflevel code="MSL" value="65.3" epoch="1996-2014" name="Middelvatn (1996-2014)" descr="Gjennomsnittleg h&#xF8;gde av sj&#xF8;overflata p&#xE5; ein stad over ein periode p&#xE5; 19 &#xE5;r" type="REF"/>
-<reflevel code="MLWN" value="56.5" name="Middel nipp l&#xE5;gvatn" descr="Gjennomsnittet av observerte lavvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
-<reflevel code="MLW" value="49.4" name="Middel l&#xE5;gvatn" descr="Gjennomsnittet av alle observerte lavvann i en periode p&#xE5; 19 &#xE5;r. " type="ASTRO"/>
-<reflevel code="MLWS" value="42.3" name="Middel spring l&#xE5;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
-<reflevel code="LAT" value="20.0" name="L&#xE5;gaste astronomiske tidvatn" descr="L&#xE5;gaste mogelege astronomiske tidvatn utan v&#xEA;ret sin verknad " type="ASTRO"/>
-<reflevel code="1YMIN" value="3.9" name="L&#xE5;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 1 &#xE5;r. " type="RETURN"/>
+<location name="&#xC5;LESUND" code="AES" latitude="62.336701" longitude="5.816093" delay="0" factor="1.00" obsname="&#xC5;LESUND" obscode="AES" landlift="0.15"/>
+<reflevel code="SAFE3" value="394.5" name="Tryggleiksklasse 3" descr="" type="ADM"/>
+<reflevel code="SAFE2" value="383.8" name="Tryggleiksklasse 2" descr="" type="ADM"/>
+<reflevel code="SAFE1" value="366.4" name="Tryggleiksklasse 1" descr="" type="ADM"/>
+<reflevel code="1000YMAX" value="320.0" name="H&#xF8;gvatn med 1000 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1000 &#xE5;r. " type="RETURN"/>
+<reflevel code="200YMAX" value="309.3" name="H&#xF8;gvatn med 200 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 200 &#xE5;r. " type="RETURN"/>
+<reflevel code="100YMAX" value="304.4" name="H&#xF8;gvatn med 100 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 100 &#xE5;r. " type="RETURN"/>
+<reflevel code="20YMAX" value="291.9" name="H&#xF8;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 20 &#xE5;r. " type="RETURN"/>
+<reflevel code="5YMAX" value="279.2" name="H&#xF8;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
+<reflevel code="1YMAX" value="264.1" name="H&#xF8;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt h&#xF8;yvann som i gjennomsnitt forventes en gang per 1 &#xE5;r." type="RETURN"/>
+<reflevel code="HAT" value="241.1" name="H&#xF8;gaste astronomiske tidvatn" descr="H&#xF8;yeste mulige vannstand uten v&#xE6;rets virkning " type="ASTROREF"/>
+<reflevel code="MHWS" value="204.5" name="Middel spring h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
+<reflevel code="MHW" value="183.3" name="Middel h&#xF8;gvatn" descr="Gjennomsnittet av alle observerte h&#xF8;gvatn i ein periode p&#xE5; 19 &#xE5;r. " type="ASTROREF"/>
+<reflevel code="MHWN" value="162.2" name="Middel nipp h&#xF8;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+<reflevel code="NN2000" value="126.2" name="Normalnull 2000" descr="Nullniv&#xE5; i det norske offisielle h&#xF8;gdesystemet NN2000" type="REF"/>
+<reflevel code="NN1954" value="124.8" name="Normalnull 1954" descr="Nullniv&#xE5; i det norske nasjonale h&#xF8;gdesystemet fr&#xE5; 1954" type="REF"/>
+<reflevel code="MSL" value="121.5" epoch="1996-2014" name="Middelvatn (1996-2014)" descr="Gjennomsnittleg h&#xF8;gde av sj&#xF8;overflata p&#xE5; ein stad over ein periode p&#xE5; 19 &#xE5;r" type="REF"/>
+<reflevel code="MLWN" value="80.9" name="Middel nipp l&#xE5;gvatn" descr="Gjennomsnittet av observerte lavvann i tiden omkring halvm&#xE5;ne (nipperiode). " type="ASTRO"/>
+<reflevel code="MLW" value="59.7" name="Middel l&#xE5;gvatn" descr="Gjennomsnittet av alle observerte lavvann i en periode p&#xE5; 19 &#xE5;r. " type="ASTRO"/>
+<reflevel code="MLWS" value="38.6" name="Middel spring l&#xE5;gvatn" descr="Gjennomsnittet av observerte h&#xF8;yvann i tiden omkring ny- og fullm&#xE5;ne (springperiode). " type="ASTRO"/>
 <reflevel code="CD" value="0.0" name="Sj&#xF8;kartnull" descr="Nullniv&#xE5; for djupner i sj&#xF8;karta og h&#xF8;gder i tidvatntabellen" type="REF"/>
-<reflevel code="5YMIN" value="-3.6" name="L&#xE5;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
-<reflevel code="20YMIN" value="-10.0" name="L&#xE5;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 20 &#xE5;r." type="RETURN"/>
+<reflevel code="LAT" value="-0.0" name="L&#xE5;gaste astronomiske tidvatn" descr="L&#xE5;gaste mogelege astronomiske tidvatn utan v&#xEA;ret sin verknad " type="ASTRO"/>
+<reflevel code="1YMIN" value="-9.7" name="L&#xE5;gvatn med 1 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 1 &#xE5;r. " type="RETURN"/>
+<reflevel code="5YMIN" value="-21.1" name="L&#xE5;gvatn med 5 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 5 &#xE5;r. " type="RETURN"/>
+<reflevel code="20YMIN" value="-30.7" name="L&#xE5;gvatn med 20 &#xE5;rs gjentaksintervall" descr="Ekstremt lavvann som i gjennomsnitt forventes en gang per 20 &#xE5;r." type="RETURN"/>
 </locationlevel>
 </tide><tide>
 <locationdata>
-<location name="STAVANGER" code="SVG" latitude="58.872981" longitude="5.747123" place="STAVANGER"/>
+<location name="&#xC5;LESUND" code="AES" latitude="62.336701" longitude="5.816093" place="&#xC5;LESUND"/>
 <reflevelcode>CD</reflevelcode>
 <data type="observation" unit="cm">
-<waterlevel value="82.5" time="2017-11-10T07:00:00+01:00" flag="obs"/>
-<waterlevel value="80.7" time="2017-11-10T07:10:00+01:00" flag="obs"/>
-<waterlevel value="78.3" time="2017-11-10T07:20:00+01:00" flag="obs"/>
-<waterlevel value="76.1" time="2017-11-10T07:30:00+01:00" flag="obs"/>
-<waterlevel value="74.6" time="2017-11-10T07:40:00+01:00" flag="obs"/>
-<waterlevel value="73.8" time="2017-11-10T07:50:00+01:00" flag="obs"/>
-<waterlevel value="74.4" time="2017-11-10T08:00:00+01:00" flag="obs"/>
-<waterlevel value="74.6" time="2017-11-10T08:10:00+01:00" flag="obs"/>
-<waterlevel value="75.4" time="2017-11-10T08:20:00+01:00" flag="obs"/>
-<waterlevel value="76.0" time="2017-11-10T08:30:00+01:00" flag="obs"/>
-<waterlevel value="75.2" time="2017-11-10T08:40:00+01:00" flag="obs"/>
-<waterlevel value="75.5" time="2017-11-10T08:50:00+01:00" flag="obs"/>
-<waterlevel value="75.6" time="2017-11-10T09:00:00+01:00" flag="obs"/>
-<waterlevel value="76.2" time="2017-11-10T09:10:00+01:00" flag="obs"/>
-<waterlevel value="78.3" time="2017-11-10T09:20:00+01:00" flag="obs"/>
-<waterlevel value="79.0" time="2017-11-10T09:30:00+01:00" flag="obs"/>
-<waterlevel value="79.9" time="2017-11-10T09:40:00+01:00" flag="obs"/>
-</data>
-<data type="prediction" unit="cm">
-<waterlevel value="68.2" time="2017-11-10T07:00:00+01:00" flag="pre"/>
-<waterlevel value="66.8" time="2017-11-10T07:10:00+01:00" flag="pre"/>
-<waterlevel value="65.5" time="2017-11-10T07:20:00+01:00" flag="pre"/>
-<waterlevel value="64.2" time="2017-11-10T07:30:00+01:00" flag="pre"/>
-<waterlevel value="63.2" time="2017-11-10T07:40:00+01:00" flag="pre"/>
-<waterlevel value="62.3" time="2017-11-10T07:50:00+01:00" flag="pre"/>
-<waterlevel value="61.7" time="2017-11-10T08:00:00+01:00" flag="pre"/>
-<waterlevel value="61.3" time="2017-11-10T08:10:00+01:00" flag="pre"/>
-<waterlevel value="61.2" time="2017-11-10T08:20:00+01:00" flag="pre"/>
-<waterlevel value="61.4" time="2017-11-10T08:30:00+01:00" flag="pre"/>
-<waterlevel value="61.8" time="2017-11-10T08:40:00+01:00" flag="pre"/>
-<waterlevel value="62.5" time="2017-11-10T08:50:00+01:00" flag="pre"/>
-<waterlevel value="63.4" time="2017-11-10T09:00:00+01:00" flag="pre"/>
-<waterlevel value="64.4" time="2017-11-10T09:10:00+01:00" flag="pre"/>
-<waterlevel value="65.6" time="2017-11-10T09:20:00+01:00" flag="pre"/>
-<waterlevel value="66.8" time="2017-11-10T09:30:00+01:00" flag="pre"/>
-<waterlevel value="68.1" time="2017-11-10T09:40:00+01:00" flag="pre"/>
-<waterlevel value="69.4" time="2017-11-10T09:50:00+01:00" flag="pre"/>
-<waterlevel value="70.6" time="2017-11-10T10:00:00+01:00" flag="pre"/>
-</data>
-<data type="weathereffect" unit="cm">
-<waterlevel value="14.3" time="2017-11-10T07:00:00+01:00"/>
-<waterlevel value="13.9" time="2017-11-10T07:10:00+01:00"/>
-<waterlevel value="12.8" time="2017-11-10T07:20:00+01:00"/>
-<waterlevel value="11.8" time="2017-11-10T07:30:00+01:00"/>
-<waterlevel value="11.5" time="2017-11-10T07:40:00+01:00"/>
-<waterlevel value="11.5" time="2017-11-10T07:50:00+01:00"/>
-<waterlevel value="12.7" time="2017-11-10T08:00:00+01:00"/>
-<waterlevel value="13.3" time="2017-11-10T08:10:00+01:00"/>
-<waterlevel value="14.2" time="2017-11-10T08:20:00+01:00"/>
-<waterlevel value="14.6" time="2017-11-10T08:30:00+01:00"/>
-<waterlevel value="13.4" time="2017-11-10T08:40:00+01:00"/>
-<waterlevel value="13.0" time="2017-11-10T08:50:00+01:00"/>
-<waterlevel value="12.3" time="2017-11-10T09:00:00+01:00"/>
-<waterlevel value="11.8" time="2017-11-10T09:10:00+01:00"/>
-<waterlevel value="12.7" time="2017-11-10T09:20:00+01:00"/>
-<waterlevel value="12.2" time="2017-11-10T09:30:00+01:00"/>
-<waterlevel value="11.8" time="2017-11-10T09:40:00+01:00"/>
-<waterlevel value="11.7" time="2017-11-10T09:50:00+01:00"/>
-</data>
-<data type="forecast" unit="cm">
-<waterlevel value="85.2" time="2017-11-10T07:00:00+01:00" flag="forecast"/>
-<waterlevel value="83.8" time="2017-11-10T07:10:00+01:00" flag="forecast"/>
-<waterlevel value="82.5" time="2017-11-10T07:20:00+01:00" flag="forecast"/>
-<waterlevel value="81.2" time="2017-11-10T07:30:00+01:00" flag="forecast"/>
-<waterlevel value="80.2" time="2017-11-10T07:40:00+01:00" flag="forecast"/>
-<waterlevel value="79.3" time="2017-11-10T07:50:00+01:00" flag="forecast"/>
-<waterlevel value="78.7" time="2017-11-10T08:00:00+01:00" flag="forecast"/>
-<waterlevel value="78.7" time="2017-11-10T08:10:00+01:00" flag="forecast"/>
-<waterlevel value="78.9" time="2017-11-10T08:20:00+01:00" flag="forecast"/>
-<waterlevel value="79.4" time="2017-11-10T08:30:00+01:00" flag="forecast"/>
-<waterlevel value="80.2" time="2017-11-10T08:40:00+01:00" flag="forecast"/>
-<waterlevel value="81.2" time="2017-11-10T08:50:00+01:00" flag="forecast"/>
-<waterlevel value="82.4" time="2017-11-10T09:00:00+01:00" flag="forecast"/>
-<waterlevel value="82.6" time="2017-11-10T09:10:00+01:00" flag="forecast"/>
-<waterlevel value="82.9" time="2017-11-10T09:20:00+01:00" flag="forecast"/>
-<waterlevel value="83.3" time="2017-11-10T09:30:00+01:00" flag="forecast"/>
-<waterlevel value="83.8" time="2017-11-10T09:40:00+01:00" flag="forecast"/>
-<waterlevel value="84.2" time="2017-11-10T09:50:00+01:00" flag="forecast"/>
+<waterlevel value="123.1" time="2017-11-10T08:00:00+01:00" flag="obs"/>
+<waterlevel value="120.0" time="2017-11-10T08:10:00+01:00" flag="obs"/>
+<waterlevel value="117.8" time="2017-11-10T08:20:00+01:00" flag="obs"/>
+<waterlevel value="117.3" time="2017-11-10T08:30:00+01:00" flag="obs"/>
+<waterlevel value="116.0" time="2017-11-10T08:40:00+01:00" flag="obs"/>
+<waterlevel value="114.6" time="2017-11-10T08:50:00+01:00" flag="obs"/>
+<waterlevel value="112.5" time="2017-11-10T09:00:00+01:00" flag="obs"/>
+<waterlevel value="112.3" time="2017-11-10T09:10:00+01:00" flag="obs"/>
+<waterlevel value="110.4" time="2017-11-10T09:20:00+01:00" flag="obs"/>
+<waterlevel value="111.2" time="2017-11-10T09:30:00+01:00" flag="obs"/>
+<waterlevel value="111.2" time="2017-11-10T09:40:00+01:00" flag="obs"/>
+<waterlevel value="110.6" time="2017-11-10T09:50:00+01:00" flag="obs"/>
+<waterlevel value="110.4" time="2017-11-10T10:00:00+01:00" flag="obs"/>
+<waterlevel value="109.3" time="2017-11-10T10:10:00+01:00" flag="obs"/>
+<waterlevel value="110.5" time="2017-11-10T10:20:00+01:00" flag="obs"/>
+<waterlevel value="111.7" time="2017-11-10T10:30:00+01:00" flag="obs"/>
+<waterlevel value="114.1" time="2017-11-10T10:40:00+01:00" flag="obs"/>
+<waterlevel value="115.1" time="2017-11-10T10:50:00+01:00" flag="obs"/>
 </data>
 </locationdata>
 </tide></vanndata>
