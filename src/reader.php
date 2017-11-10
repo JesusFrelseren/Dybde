@@ -130,6 +130,8 @@ function lagreSammensattXML($res) {
         $url2 = "sammensatt.xml";
         $sxml2 = simplexml_load_file($url2);
         if(isset($sxml2->tide[1]->locationdata->data->waterlevel )){
+            $date = date_create($data2["time"]);
+            $dateFormatted = date_format($date, 'H:i');
             if($sxml2->tide[1]->locationdata->data["type"]=="observation"){
 
             try {
